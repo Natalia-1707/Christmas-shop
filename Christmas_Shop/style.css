@@ -48,20 +48,6 @@ header {
     line-height: 15.6px;
     letter-spacing: 0.5px;
 }
-.burger_menu {
-    display: none;
-    width: 40px;
-    height: 40px;
-    z-index: 2;
-    cursor: pointer;
-}
-.burger {
-    display: none;
-    width: 21px;
-    height: 2px;
-    background-color: #181C29;
-    margin: 6px 0;
-}
 .header_navigation {
     width: 376px;
     height: 40px;
@@ -94,5 +80,303 @@ header {
     color: #FF4646;
     background-color: #FF46461A;
     border-radius: 12px;
+    transition: 0.5s;
+}
+
+/* Main */
+/* Section hero */
+.hero {
+    width: 1440px;
+    height: 524px;
+    background-color: #FF4646;
+    background-image: url(img/bg-ball.png), url(img/bg-snow.png);
+    background-size: cover, cover;
+    background-position: center, center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.hero_container {
+    width: 426px;
+    height: 404px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 507px;
+    padding-top: 57px;
+}
+.hero_textone {
+    width: 426px;
+    height: 24px;
+    margin: 5px 0px 12px 0px;
+    text-align: center;
+}
+.hero_textone span {
+    color: #FFFFFF;
+    font-family: "Allura", cursive;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+.header_one {
+    width: 426px;
+    height: 144px;
+    margin: 0;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 5.5px;
+}
+.button_hero {
+    width: 235px;
+    height: 56px;
+    border-radius: 20px;
+    margin: 12px 95.5px;
+    padding: 20px 28px;
+    background-color: #181C29;
+    border: #181C29;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15.6px;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+}
+.button_hero:hover {
+    background-color: #FFFFFF;
+    color: #181C29;
+    transition: 0.5s;
+}
+.hero_texttwo {
+    width: 426px;
+    height: 24px;
+    text-align: center;
+}
+.hero_texttwo span {
+    color: #FFFFFF;
+    font-family: "Allura", cursive;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+/* Section about */
+.about {
+    width: 1440px;
+    height: 588px;
+    background-color: #FF4646;
+    background-image: url(img/bg-snow.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 60px;
+}
+.about_container {
+    width: 1276px;
+    height: 528px;
+    margin-left: 82px;
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+.about_text_block {
+    border-radius: 20px;
+}
+.img_about {
+    width: 638px;
+    height: 528px;
+    border-radius: 20px;
+}
+.about_text_block {
+    width: 426px;
+    height: 328px;
+    margin: 100px 152px 100px 60px;
+}
+.about_textone {
+    width: 426px;
+    height: 24px;
+    margin: 0;
+    padding-top: 60px;
+    color: #FF4646;
+    font-family: "Allura", cursive;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+.header_two {
+    width: 426px;
+    height: 72px;
+    color: #181C29;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36.48px;
+    letter-spacing: 4px;
+}
+.about_texttwo {
+    width: 426px;
+    height: 72px;
+    padding-top: 2px;
+    color: #181C29;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.68px;
+}
+
+/* Section slider */
+.slider {
+    width: 1440px;
+    height: 488px;
+    background-color: #FF4646;
+    background-image: url(img/bg-snow.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.slider_container {
+    width: 1276px;
+    height: 368px;
+    padding: 60px 82px;
+    display: flex;
+    flex-direction: column;
+}
+.slider_text {
+    width: 426px;
+    height: 72px;
+    margin-left: 425px;
+    text-align: center;
+}
+.slider_textone {
+    width: 426px;
+    height: 24px;
+    color: #FFFFFF;
+    font-family: "Allura", cursive;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+.slider_texttwo {
+    width: 426px;
+    height: 36px;
+    margin: 0;
+    padding-top: 12px;
+    padding-left: 2px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36.48px;
+    letter-spacing: 4px;
+}
+.slider_block {
+    width: 1276px;
+    height: 200px;
+    padding-top: 20px;
+    gap: 20px;
+    display: flex;
+    overflow: visible;
+    position: relative;
+}
+.slider_word {
+    padding-top: 51px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 97.52px;
+    text-align: center;
+}
+.slider_image {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.arrows {
+    width: 1276px;
+    height: 56px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.arrows button {
+    width: 56px;
+    height: 56px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+.left,
+.right {
+    width: 12.5px;
+    height: 12px;
+    position: relative;
+    display: inline-flex;
+}
+.left::before,
+.right::before,
+.left::after,
+.right::after {
+    content: '';
+    position: absolute;   
+}
+.left::before,
+.right::before {
+    width: 12px;
+    height: 1px;
+    background-color: #FFFFFF;
+    top: 6px;
+}
+.left::after,
+.right::after {
+    width: 6px;
+    height: 6px;
+}
+.left::after {
+    border-top: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    transform: rotate(-45deg);
+    top: 3px;
+    left: 1px;
+}
+.right::after {
+    border-top: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    transform: rotate(138deg);
+    top: 3px;
+    left: 5px;
+}
+.arrows button:disabled {
+    color: #FFFFFF66;
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.arrows button:hover {
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+    transition: 0.5s;
+
+}
+.arrows button:hover .left::after,
+.arrows button:hover .right::after {
+    border-top: 1px solid #FF4646;
+    border-left: 1px solid #FF4646;
+    transition: 0.5s;
+}
+.arrows button:hover .left::before,
+.arrows button:hover .right::before {
+    background-color: #FF4646;
     transition: 0.5s;
 }

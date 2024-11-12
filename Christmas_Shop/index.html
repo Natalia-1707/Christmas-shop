@@ -18,26 +18,64 @@
     <header>
         <div class="header_container">
             <div class="logo_block">
-                <img class="logo" src="img/snowflake.svg" alt="logo" height="24" width="24">
+                <a class="link_nav" href="" style="text-decoration: none;color:#181C29"><img class="logo" src="img/snowflake.svg" alt="logo" height="24" width="24">
                 <div class="logo_text">
-                    <span>THE GIFTS</span>
+                    <span>THE GIFTS</span></a>
                 </div>
-            </div>
-            <div class="burger_menu">
-                <div class="burger"></div>
-                <div class="burger"></div>
             </div>
             <div class="header_navigation">
                 <div class="navigation">
                     <ul class="nav">
                         <li>GIFTS</li>
-                        <li>ABOUT</li>
-                        <li>BEST</li>
-                        <li>CONTACTS</li>
+                        <a class="link_nav" href="#about" style="text-decoration: none;color:#181C29"><li>ABOUT</li></a>
+                        <a class="link_nav" href="#best" style="text-decoration: none;color:#181C29"><li>BEST</li></a>
+                        <a class="link_nav" href="#contacts" style="text-decoration: none;color:#181C29"><li>CONTACTS</li></a>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
+    <main>
+        <section class="hero">
+            <div class="hero_container">
+                <div class="hero_textone"> <span>Merry Christmas</span></div>
+                <h1 class="header_one">GIFT YOURSELF THE MAGIC OF NEW POSSIBILITIES</h1>
+                <button class="button_hero">EXPLORE MAGICAL GIFTS</button>
+                <div class="hero_texttwo"><span>and Happy New Year</span></div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="about_container">
+                <div class="about_text_block">
+                    <div class="text_about">
+                        <div class="about_textone"><span>About</span></div>
+                        <h2 class="header_two">UNLEASH YOUR INNER SUPERHERO!</h2>
+                        <div class="about_texttwo"><span>This New Year marks the beginning of your journey to inner harmony and new strengths. We offer unique gifts that will help you improve your life.</span></div>
+                    </div>
+                </div>
+                <img class="img_about" src="img/santa.jpg" alt="Santa">
+            </div>
+        </section>
+        <section class="slider">
+            <div class="slider_container">
+                <div class="slider_text">
+                    <div class="slider_textone"><span>Become Happier!</span></div>
+                    <h2 class="slider_texttwo">IN THE NEW 2025</h2>
+                </div>
+                <div class="slider_block">
+                    <div class="slider_word"><span>LIVE</span></div>
+                    <img class="slider_image" src="img/snowman.png" alt="snowman">
+                    <div class="slider_word"><span>CREATE</span></div>
+                    <img class="slider_image" src="img/christmastrees.png" alt="christmastree">
+                    <div class="slider_word"><span>LOVE</span></div>
+                    <img class="slider_image" src="img/christmastreeball.png" alt="christmastreeball">
+                </div>
+                <div class="arrows">
+                    <button disabled><span class="left"></span></button>
+                    <button><span class="right"></span></button>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
