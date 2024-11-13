@@ -380,3 +380,361 @@ header {
     background-color: #FF4646;
     transition: 0.5s;
 }
+
+/* Section best gifts */
+.best_gifts {
+    width: 1440px;
+    height: 554px;
+    background-color: #FF4646;
+    background-image: url(img/bg-snow.png);
+    background-size: cover;
+    background-position: center;
+}
+.gifts_container {
+    width: 1276px;
+    height: 434px;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 82px;
+}
+.gifts_text {
+    width: 426px;
+    height: 72px;
+    padding-left: 425px;
+    text-align: center;
+}
+.gifts_textone {
+    width: 426px;
+    height: 24px;
+    color: #FFFFFF;
+    font-family: "Allura", cursive;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+.gifts_texttwo {
+    width: 426px;
+    height: 36px;
+    margin: 0;
+    padding-top: 12px;
+    padding-left: 2px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36.48px;
+    letter-spacing: 4px;
+}
+.gifts_block {
+    width: 1276px;
+    height: 342px;
+    padding-top: 20px;
+    display: flex;
+    gap: 12px;
+}
+.gifts_example {
+    width: 310px;
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.gifts_example img {
+    width: 310px;
+    height: 230px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #ECF3F8;
+}
+.gift_description {
+    width: 310px;
+    height: 112px;
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.gift_work,
+.gift_health,
+.gift_harmony {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15.6px;
+    letter-spacing: 0.5px;
+}
+.gift_work {
+    color: #4361FF;
+}
+.gift_health {
+    color: #06A44F;
+}
+.gift_harmony {
+    color: #FF43F7;
+}
+.gift_name {
+    display: flex;
+    padding-top: 9px;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24.32px;
+    letter-spacing: 1.2px;
+}
+.gifts_example:hover .gift_name {
+    color: #FF4646;
+    transition: 0.5s;
+}
+
+/* Section CTA */
+.cta {
+    width: 1440px;
+    height: 668px;
+    background-color: #FF4646;
+    background-image: url(img/bg-snow.png), url(img/bgforest.png);
+    background-size: cover, cover;
+    background-position: center, center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.cta_container {
+    width: 1276px;
+    height: 548px;
+    padding: 60px 82px;
+}
+.cta_block {
+    width: 426px;
+    height: 428px;
+    padding: 60px 425px;
+    text-align: center;
+}
+.cta_text {
+    width: 426px;
+    height: 108px;
+    margin: 0;
+    padding-top: 60px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36.48px;
+    letter-spacing: 4px;
+}
+.cta_block button {
+    width: 235px;
+    height: 56px;
+    border-radius: 20px;
+    margin: 20px 95.5px;
+    padding: 20px 28px;
+    background-color: #181C29;
+    border: #181C29;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15.6px;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+}
+.cta_block button:hover {
+    background-color: #FFFFFF;
+    color: #181C29;
+    transition: 0.5s;
+}
+.countdown {
+    width: 426px;
+    height: 104px;
+}
+.countdown_text {
+    width: 426px;
+    height: 24px;
+    color: #FFFFFF;
+    font-family: "Allura", cursive;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+.countdown_block {
+    width: 344px;
+    height: 72px;
+    margin-top: 8px;
+    margin-left: 40px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.block {
+    width: 320px;
+    height: 52px;
+    display: flex;
+    padding-top: 8px;
+    padding-left: 12px;
+}
+.block_time {
+    width: 80px;
+    height: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.numbers {
+    padding-left: 7px;
+    color: #FFFFFF;;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36.48px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+.period {
+    padding-left: 2px;
+    color: #FFFFFF;;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15.6px;
+    letter-spacing: 0.6px;
+    text-align: center;
+}
+.separator {
+    width: 1px;
+    height: 20px;
+    margin-top: 15px;
+    background-color: #FFFFFF;;
+}
+
+/* FOOTER */
+footer {
+    width: 1440px;
+    height: 496px;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+.footer_container {
+    width: 1276px;
+    height: 376px;
+    padding-top: 46px;
+    padding-left: 82px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contacts_block {
+    width: 1276px;
+    height: 204px;
+    margin: 0;
+    padding-top: 30px;
+    display: flex;
+    gap: 12px;
+}
+.contacts {
+    width: 417.33px;
+    height: 204px;
+    background-color: #ECF3F8;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.footer_img {
+    width: 80px;
+    height: 76.84px;
+    padding-top: 21.87px;
+    padding-left: 168.87px;
+}
+.connect {
+    width: 377.33px;
+    height: 36px;
+    padding-top: 12px;
+    padding-left: 23px;
+    color: #181C29;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36.48px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+.contacts:hover .connect {
+    color: #FF4646;
+    transition: 0.5s;
+}
+.calltoaction {
+    width: 377.33px;
+    height: 24px;
+    padding-top: 12px;
+    padding-left: 23px;
+    color: #181C29;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24.32px;
+    letter-spacing: 1.28px;
+    text-align: center;
+}
+.contacts:hover .calltoaction {
+    color: #FF4646;
+    transition: 0.5s;
+}
+.footer_signature {
+    width: 1276px;
+    height: 112px;
+    margin: 0;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.social {
+    width: 196px;
+    height: 40px;
+    display: flex;
+    padding-top: 0;
+    padding-left: 540px;
+    gap: 12px;
+}
+.social_img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.social_img:hover {
+    filter: brightness(0) saturate(100%) invert(41%) sepia(93%) saturate(2568%) hue-rotate(333deg) brightness(102%) contrast(109%);
+}
+.year {
+    width: 301px;
+    height: 24px;
+    padding-top: 12px;
+    padding-left: 487.5px;
+    color: #181C29;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.68px;
+    text-align: center;
+}
+.rsschool {
+    width: 290px;
+    height: 24px;
+    padding-top: 12px;
+    padding-left: 493px;
+    color: #181C29;
+    font-family: "Allura", cursive;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+}
+.rsschool:hover {
+    color: #FF4646;
+    transition: 0.5s;
+}
