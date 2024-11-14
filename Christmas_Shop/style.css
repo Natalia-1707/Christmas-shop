@@ -634,7 +634,7 @@ footer {
     display: flex;
     gap: 12px;
 }
-.contacts {
+.contacts a{
     width: 417.33px;
     height: 204px;
     background-color: #ECF3F8;
