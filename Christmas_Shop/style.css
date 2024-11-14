@@ -26,7 +26,7 @@ header {
     height: 64px;
     margin: 0px 82px;
 }
-.logo_block {
+.logo_block a{
     display: flex;
     width: 141px;
     height: 40px;
@@ -57,17 +57,19 @@ header {
     width: 376px;
     height: 40px;
     margin: 0;
+    padding-left: 51px;
 }
-.nav {
+.nav{
     width: 376px;
     height: 40px;
     display: flex;
     margin: 0;
     padding-left: 0;
+    padding-top: 10px;
     gap: 8px;
     list-style-type: none;
 }
-.nav li {
+.nav li a{
     padding: 12px 20px 12px 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
@@ -76,13 +78,12 @@ header {
     letter-spacing: 0.6px;
     cursor: pointer;
 }
-.nav li:hover {
+.nav li a:hover {
     color: #FF4646;
     background-color: #FF46461A;
     border-radius: 12px;
     transition: 0.5s;
 }
-
 /* Main */
 /* Section hero */
 .hero {
@@ -524,7 +525,7 @@ header {
     line-height: 36.48px;
     letter-spacing: 4px;
 }
-.cta_block button {
+.cta_block button{
     width: 235px;
     height: 56px;
     border-radius: 20px;
