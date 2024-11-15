@@ -26,7 +26,7 @@ header {
     height: 64px;
     margin: 0px 82px;
 }
-.logo_block {
+.logo_block a{
     display: flex;
     width: 141px;
     height: 40px;
@@ -64,10 +64,11 @@ header {
     display: flex;
     margin: 0;
     padding-left: 0;
+    padding-top: 10px;
     gap: 8px;
     list-style-type: none;
 }
-.nav li {
+.nav li a {
     padding: 12px 20px 12px 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
@@ -76,11 +77,11 @@ header {
     letter-spacing: 0.6px;
     cursor: pointer;
 }
-.nav li:hover {
+.nav li a:hover {
     color: #FF4646;
     background-color: #FF46461A;
     border-radius: 12px;
-    transition: 0.5s;
+    transition: 1s;
 }
 .non_interactive {
     pointer-events: none;
@@ -144,7 +145,7 @@ header {
 .filter.active{
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 12px;
-    transition: 0.5s;
+    transition: 1s;
 }
 .filter.active{
     pointer-events: none;
@@ -212,7 +213,7 @@ header {
 }
 .gift:hover .gift_name {
     color: #FF4646;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 
 /* FOOTER */
@@ -270,7 +271,7 @@ footer {
 }
 .contacts:hover .connect {
     color: #FF4646;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 .calltoaction {
     width: 377.33px;
@@ -287,7 +288,7 @@ footer {
 }
 .contacts:hover .calltoaction {
     color: #FF4646;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 .footer_signature {
     width: 1276px;
@@ -342,5 +343,5 @@ footer {
 }
 .rsschool:hover {
     color: #FF4646;
-    transition: 0.5s;
+    transition: 0.8s;
 }

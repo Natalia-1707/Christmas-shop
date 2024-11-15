@@ -57,7 +57,6 @@ header {
     width: 376px;
     height: 40px;
     margin: 0;
-    padding-left: 51px;
 }
 .nav{
     width: 376px;
@@ -82,7 +81,7 @@ header {
     color: #FF4646;
     background-color: #FF46461A;
     border-radius: 12px;
-    transition: 0.5s;
+    transition: 1s;
 }
 /* Main */
 /* Section hero */
@@ -151,7 +150,7 @@ header {
 .button_hero:hover {
     background-color: #FFFFFF;
     color: #181C29;
-    transition: 0.5s;
+    transition: 1s;
 }
 .hero_texttwo {
     width: 426px;
@@ -367,19 +366,19 @@ header {
 .arrows button:hover {
     color: #FFFFFF;
     background-color: #FFFFFF;
-    transition: 0.5s;
+    transition: 1s;
 
 }
 .arrows button:hover .left::after,
 .arrows button:hover .right::after {
     border-top: 1px solid #FF4646;
     border-left: 1px solid #FF4646;
-    transition: 0.5s;
+    transition: 1s;
 }
 .arrows button:hover .left::before,
 .arrows button:hover .right::before {
     background-color: #FF4646;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 /* Section best gifts */
@@ -488,7 +487,7 @@ header {
 }
 .gifts_example:hover .gift_name {
     color: #FF4646;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 
 /* Section CTA */
@@ -545,7 +544,7 @@ header {
 .cta_block button:hover {
     background-color: #FFFFFF;
     color: #181C29;
-    transition: 0.5s;
+    transition: 1s;
 }
 .countdown {
     width: 426px;
@@ -665,7 +664,7 @@ footer {
 }
 .contacts:hover .connect {
     color: #FF4646;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 .calltoaction {
     width: 377.33px;
@@ -682,7 +681,7 @@ footer {
 }
 .contacts:hover .calltoaction {
     color: #FF4646;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 .footer_signature {
     width: 1276px;
@@ -737,5 +736,5 @@ footer {
 }
 .rsschool:hover {
     color: #FF4646;
-    transition: 0.5s;
+    transition: 0.8s;
 }
