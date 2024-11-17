@@ -950,3 +950,255 @@ footer {
         padding-left: 231px; 
     }
 }
+
+@media screen and (max-width: 380px) {
+    html {
+        max-width: 380px;
+        scroll-behavior: smooth;
+        display: block;
+        margin: auto;
+    }
+    body {
+        width: 380px;
+        margin: 0;
+    }
+    main {
+        width: 380px;
+        margin: 0;
+    }
+    header {
+        width: 380px;
+        height: 64px;
+    }
+    .header_container {
+        width: 380px;
+        height: 64px;
+        margin: 0;
+    }
+    .logo_block a{
+        margin: 12px 183px 12px 8px;
+    }
+    .hero {
+        width: 380px;
+        height: 572px;
+    }
+    .hero_container {
+        width: 364px;
+        height: 452px;
+        margin: 0;
+        padding: 60px 8px;
+    }
+    .hero_textone {
+        width: 364px;
+        height: 24px;
+        margin: 0;
+        padding-bottom: 12px;
+    }
+    .header_one {
+        width: 364px;
+        height: 192px;
+        margin: 0;
+    }
+    .button_hero {
+        margin-left: 64.5px;
+        margin-right: 64.5px;
+    }
+    .hero_texttwo {
+        width: 364px;
+        height: 24px;
+        margin: 0;
+    }
+    .about {
+        width: 380px;
+        height: 940px;
+    }
+    .about_container {
+        display: flex;
+        flex-direction: column;
+        width: 364px;
+        height: 880px;
+    }
+    .about_text_block {
+        width: 364px;
+        height: 352px;
+        margin: 0;
+        padding: 0;
+    }
+    .img_about {
+        width: 364px; 
+        height: 528px;
+    }
+    .text_about {
+        width: 324px;
+        height: 352px;
+        margin-left: 20px;
+    }
+    .about_textone {
+        width: 324px;
+        height: 24px;
+        margin-bottom: 20px;
+    }
+    .header_two {
+        width: 324px;
+        height: 72px;
+    }
+    .about_texttwo {
+        width: 324px;
+        height: 96px;
+    }
+    .slider {
+        width: 380px;
+        height: 488px;
+    }
+    .slider_container {
+        width: 364px;
+        height: 368px;
+        padding: 0;
+        margin: 60px 8px;
+    }
+    .slider_text {
+        width: 364px;
+        height: 72px;
+        margin: 0;
+        padding: 0;
+    }
+    .slider_textone {
+        width: 364px;
+        height: 24px;
+    }
+    .slider_texttwo {
+        width: 364px;
+        height: 36px;
+    }
+    .arrows {
+        width: 364px;
+        height: 56px;
+    }
+    .best_gifts {
+        width: 380px;
+        height: 1616px;
+    }
+    .gifts_container {
+        width: 364px;
+        height: 1496px;
+        padding: 60px 0 0 0;
+        margin-left: 8px;
+    }
+    .gifts_text {
+        width: 364px;
+        height: 72px;
+        padding: 0;
+        margin: 0;
+    }
+    .gifts_textone {
+        width: 364px;
+        height: 24px;
+    }
+    .gifts_texttwo {
+        width: 364px;
+        height: 36px;
+    }
+    .gifts_block {
+        display: flex;
+        flex-direction: column;
+        width: 364px;
+        height: 1404px;
+    }
+    .gifts_example {
+        padding-left: 27px;
+    }
+    .cta {
+        width: 380px;
+        height: 704px;
+    }
+    .cta_container {
+        width: 364px;
+        height: 584px;
+        margin-left: 8px;
+        padding: 0;
+    }
+    .cta_block {
+        width: 364px;
+        height: 464px;
+        margin: 0;
+        padding-top: 120px;
+    }
+    .cta_text {
+        width: 364px;
+        height: 144px;
+        letter-spacing: 3.7px;
+        padding-bottom: 20px;
+    }
+    .cta_block button {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .countdown {
+        width: 364px;
+        height: 104px;
+    }
+    .countdown_text {
+        width: 364px;
+        height: 24px;
+    }
+    .countdown_block {
+        margin-left: 10px;
+    }
+    footer {
+        width: 380px;
+        height: 928px;
+    }
+    .footer_container {
+        width: 364px;
+        height: 808px;
+    }
+    .contacts_block {
+        width: 364px;
+        height: 636px;
+    }
+    .contacts a{
+        width: 364px;
+        height: 204px;
+    }
+    .connect {
+        width: 324px;
+        height: 36px;
+        padding-top: 16px;
+    }
+    .calltoaction {
+        width: 324px;
+        height: 24px;
+    }
+    .footer_img {
+        width: 80px;
+        height: 76.84px;
+        margin: 0;
+        padding-top: 21.87px;
+        padding-left: 142px;
+    }
+    .footer_signature {
+        width: 364px;
+        height: 112px;
+        margin: 0;
+    }
+    .social {
+        width: 196px;
+        height: 40px;
+        margin-left: 84px;
+        padding-top: 6px;
+        padding-left: 0;
+    }
+    .year {
+        width: 301px;
+        height: 24px;
+        margin-left: 31.5px;
+        padding-left: 0;
+    }
+    .rsschool {
+        width: 290px;
+        height: 24px;
+        margin-left: 37px;
+        padding-left: 0;
+        letter-spacing: 1.1px;
+    }
+}
