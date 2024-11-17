@@ -48,6 +48,20 @@ header {
     line-height: 15.6px;
     letter-spacing: 0.5px;
 }
+.burger_menu {
+    display: none;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    cursor: pointer;
+}
+.burger {
+    display: none;
+    width: 21px;
+    height: 2px;
+    background-color: #181C29;
+    margin: 6px 0;
+}
 .header_navigation {
     width: 376px;
     height: 40px;
@@ -344,4 +358,137 @@ footer {
 .rsschool:hover {
     color: #FF4646;
     transition: 0.8s;
+}
+
+/*-----------MEDIA--------- */
+@media screen and (max-width: 768px) {
+    html {
+        max-width: 768px;
+        scroll-behavior: smooth;
+        display: block;
+        margin: auto;
+    }
+    body {
+        width: 768px;
+        margin: 0;
+    }
+    main {
+        width: 768px;
+        margin: 0;
+    }
+    header {
+        width: 768px;
+        height: 64px;
+        margin: 0;
+    }
+    .header_container {
+        width: 752px;
+        height: 64px;
+        margin: 0px 8px;
+    }
+    .logo_block a {
+        width: 141px;
+        height: 40px;
+        margin: 12px 571px 12px 0px;
+        cursor: pointer;
+    }
+    .header_navigation {
+        display: none;
+    }
+    .burger_menu {
+        display: block;
+        padding-right: 0;
+        margin-right: 0;
+        margin-top: 21px;
+        margin-left: 9px;
+        transition: 1s;
+        cursor: pointer;
+    }
+    .burger {
+        display: block;
+    }
+    .gifts {
+        width: 768px;
+        height: 2456px;
+    }
+    .gifts_container {
+        width: 752px;
+        height: 2336px;
+        padding: 60px 8px;
+    }
+    .headerone {
+        width: 426px;
+        height: 144px;
+        margin-left: 163px;
+        margin-right: 163px;
+        padding: 0;
+    }
+    .filters {
+        width: 474px;
+        height: 40px;
+        margin-left: 139px;
+        margin-right: 139px;
+        padding-top: 20px;
+        padding-left: 0;
+    }
+    .gifts_block {
+        width: 692px;
+        height: 2112px;
+        margin: 0;
+        padding-top: 20px;
+        margin-left: 60px;
+    }
+    footer {
+        width: 768px;
+        height: 870px;
+    }
+    .footer_container {
+        width: 752px;
+        height: 808px;
+        padding: 58px 0 0 0;
+        margin-left: 8px;
+    }
+    .contacts_block {
+        width: 752px;
+        height: 636px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .contacts a {
+        width: 752px;
+        height: 204px;
+    }
+    .footer_img {
+        margin-left: 336px;
+        padding-left: 0;
+        padding-bottom: 1px;
+    }
+    .connect {
+        width: 712px;
+        height: 36px;
+        padding-left: 0;
+        padding-top: 14px;
+        margin-left: 24px;
+    }
+    .calltoaction {
+        width: 712px;
+        height: 24px;
+        padding-left: 0;
+        margin-left: 20px;
+    }
+    .footer_signature {
+        width: 752px;
+        height: 112px;
+    }
+    .social {
+        padding-top: 3px;
+        padding-left: 278px;
+    }
+    .year {
+        padding-left: 225.5px;
+    }
+    .rsschool {
+        padding-left: 231px; 
+    }
 }
