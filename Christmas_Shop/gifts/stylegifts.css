@@ -492,3 +492,122 @@ footer {
         padding-left: 231px; 
     }
 }
+
+@media screen and (max-width: 380px) {
+    html {
+        max-width: 380px;
+        scroll-behavior: smooth;
+        display: block;
+        margin: auto;
+    }
+    body {
+        width: 380px;
+        margin: 0;
+    }
+    main {
+        width: 380px;
+        margin: 0;
+    }
+    header {
+        width: 380px;
+        height: 64px;
+    }
+    .header_container {
+        width: 380px;
+        height: 64px;
+        margin: 0;
+    }
+    .logo_block a{
+        margin: 12px 183px 12px 8px;
+    }
+    .gifts {
+        width: 380px;
+        height: 4676px;
+    }
+    .gifts_block {
+        width: 364px;
+    }
+    .gifts_container {
+        width: 364px;
+        height: 4556px;
+        padding: 60px 8px;
+    }
+    .headerone {
+        width: 364px;
+        height: 240px;
+        margin: 0;
+        padding: 0;
+    }
+    .filters {
+        width: 365px;
+        height: 40px;
+        margin: 0;
+        padding-left: 0;
+        gap: 0;
+    }
+    .filter {
+        padding: 12px 8px 12px 8px;
+    }
+    .gifts_block {
+        width: 364px;
+        height: 4236px;
+        margin-left: 27px;
+    }
+    footer {
+        width: 380px;
+        height: 928px;
+    }
+    .footer_container {
+        width: 364px;
+        height: 808px;
+    }
+    .contacts_block {
+        width: 364px;
+        height: 636px;
+    }
+    .contacts a{
+        width: 364px;
+        height: 204px;
+    }
+    .connect {
+        width: 324px;
+        height: 36px;
+        padding-top: 16px;
+    }
+    .calltoaction {
+        width: 324px;
+        height: 24px;
+    }
+    .footer_img {
+        width: 80px;
+        height: 76.84px;
+        margin: 0;
+        padding-top: 21.87px;
+        padding-left: 142px;
+    }
+    .footer_signature {
+        width: 364px;
+        height: 112px;
+        margin: 0;
+    }
+    .social {
+        width: 196px;
+        height: 40px;
+        margin-left: 84px;
+        padding-top: 6px;
+        padding-left: 0;
+    }
+    .year {
+        width: 301px;
+        height: 24px;
+        margin-left: 31.5px;
+        padding-left: 0;
+    }
+    .rsschool {
+        width: 290px;
+        height: 24px;
+        margin-left: 37px;
+        padding-left: 0;
+        letter-spacing: 1.1px;
+    }
+}

@@ -753,6 +753,7 @@ footer {
     transition: 0.8s;
 }
 
+/*-----------MEDIA--------- */
 @media screen and (max-width: 768px) {
     html {
         max-width: 768px;
@@ -1143,6 +1144,63 @@ footer {
     }
     .countdown_block {
         margin-left: 10px;
+    }
+    footer {
+        width: 380px;
+        height: 928px;
+    }
+    .footer_container {
+        width: 364px;
+        height: 808px;
+    }
+    .contacts_block {
+        width: 364px;
+        height: 636px;
+    }
+    .contacts a{
+        width: 364px;
+        height: 204px;
+    }
+    .connect {
+        width: 324px;
+        height: 36px;
+        padding-top: 16px;
+    }
+    .calltoaction {
+        width: 324px;
+        height: 24px;
+    }
+    .footer_img {
+        width: 80px;
+        height: 76.84px;
+        margin: 0;
+        padding-top: 21.87px;
+        padding-left: 142px;
+    }
+    .footer_signature {
+        width: 364px;
+        height: 112px;
+        margin: 0;
+    }
+    .social {
+        width: 196px;
+        height: 40px;
+        margin-left: 84px;
+        padding-top: 6px;
+        padding-left: 0;
+    }
+    .year {
+        width: 301px;
+        height: 24px;
+        margin-left: 31.5px;
+        padding-left: 0;
+    }
+    .rsschool {
+        width: 290px;
+        height: 24px;
+        margin-left: 37px;
+        padding-left: 0;
+        letter-spacing: 1.1px;
     }
     footer {
         width: 380px;
