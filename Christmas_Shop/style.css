@@ -100,7 +100,7 @@ header {
 /* Main */
 /* Section hero */
 .hero {
-    width: 1440px;
+    width: 100%;
     height: 524px;
     background-color: #FF4646;
     background-image: url(img/bg-ball.png), url(img/bg-snow.png);
@@ -110,13 +110,12 @@ header {
     border-top-left-radius: 20px;
 }
 .hero_container {
-    width: 426px;
-    height: 404px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0px 507px;
-    padding-top: 57px;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 115px;
 }
 .hero_textone {
     width: 426px;
@@ -182,7 +181,7 @@ header {
 
 /* Section about */
 .about {
-    width: 1440px;
+    width: 100%;
     height: 588px;
     background-color: #FF4646;
     background-image: url(img/bg-snow.png);
@@ -244,7 +243,7 @@ header {
 
 /* Section slider */
 .slider {
-    width: 1440px;
+    width: 100%;
     height: 488px;
     background-color: #FF4646;
     background-image: url(img/bg-snow.png);
@@ -395,7 +394,7 @@ header {
 
 /* Section best gifts */
 .best_gifts {
-    width: 1440px;
+    width: 100%;
     height: 554px;
     background-color: #FF4646;
     background-image: url(img/bg-snow.png);
@@ -753,37 +752,36 @@ footer {
 
 /*-----------MEDIA--------- */
 @media screen and (max-width: 1439px) and (min-width: 769px) {
+    html {
+        width: 100%;
+    }
+    body {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+    }
     header {
         width: 100%;
-        height: 64px;
-        margin: 0;
-        background-color: white;
     }
     .header_container {
-        max-width: 95%;
-        height: 64px;
-        margin: 0 auto;
+        width: 95%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        text-align: center;
+        margin: 0 auto;
     }
-    
     .logo_block a{
         display: flex;
-        max-width: 8.8125rem;
-        width: 100%;
-        height: 40px;
-        margin: 12px 39.531vw 12px 0;
+        margin: 0.75rem;
         cursor: pointer;
     }
     .logo {
-        margin: 8px 8px 8px 20px;
+        margin: 0.5rem 0.5rem 0.5rem 1.25rem;
     }
     .logo_text {
-        width: 69px;
-        height: 16px;
-        margin: 10px 20px 12px 0px;
+        width: 4.1325rem;
+        margin: 0;
     }
     .logo_text span {
         font-family: 'Montserrat', sans-serif;
@@ -793,69 +791,244 @@ footer {
         letter-spacing: 0.5px;
     }
     .header_navigation {
-        width: 376px;
-        display: flex;
-        justify-content: flex-end;
-        height: 40px;
-        margin: 12px 0;
+        margin-right: 0;
     }
     .navigation {
-        max-width: 376px;
-        width: 100%;
+        width: 23.5rem;
         height: 40px;
         margin: 0;
     }
-    .hero_container {
-        width: 61vw;
-        margin: 0 auto;
-    }
-    .hero_textone {
-        margin: 0 auto;
-    }
-    .button_gifts {
-        margin: 0 auto;
+    .nav{
+        width: 23.5rem;
+        height: 40px;
+        display: flex;
+        margin: 0;
+        padding-left: 0;
+        padding-top: 0.625rem;
+        gap: 0.5rem;
+        list-style-type: none;
     }
     .hero_texttwo {
+        width: 426px;
+        height: 24px;
+        text-align: center;
+    }
+    .hero_texttwo span {
+        color: #FFFFFF;
+        font-family: "Allura", cursive;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 1px;
+    }
+    .hero_textone {
+        width: 26.625rem;
+        height: auto;
         margin: 0 auto;
     }
+    .hero_textone span {
+        color: #FFFFFF;
+        font-family: "Allura", cursive;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 1px;
+    }
     .header_one {
-        width: 55vw;
+        width: 45vw;
+        height: auto;
+        margin: 0 auto;
+        color: #FFFFFF;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 48px;
+        letter-spacing: 5.5px
+    }
+    .hero_texttwo {
+        width: 26.625rem;
         height: auto;
         margin: 0 auto;
     }
     .about_container {
-        width: 80%;
-        padding: 0;
+        width: 90vw;
         margin: 0 auto;
-    }
-    .about_text_block {
-        width: calc(90% - ((90% - 70%) * ((1439px - 100vw) / (1439 - 769))));
-        height: auto;
-        margin: 5rem 5rem;
         display: flex;
-        justify-content: flex-start;
-    }
-    .about_textone {
-        width: 90%;
-        height: auto;
-        margin: 0 auto;
-        padding: 1rem;
-    }
-    .header_two {
-        width: 30vw;
-        height: auto;
-        margin: 0 auto;
-        padding: 1rem;
-    }
-    .about_texttwo {
-        width: 30vw;
-        height: auto;
-        margin: 0 auto;
     }
     .img_about {
-        width: calc(90% - ((90% - 70%) * ((1439px - 100vw) / (1439 - 769))));
-        height: auto;
+        width: 46.771vw;
+        height: 528px;
+        border-radius: 20px;
         object-fit: cover;
+    }
+    .about_text_block {
+        width: 33.229vw;
+        height: 328px;
+        margin: 2.875rem 5rem;
+    }
+    .about_textone {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 2.75rem;
+    }
+    .header_two {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 1.7rem;
+    }
+    .about_texttwo {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 1.7rem;
+    }
+
+    .slider_container {
+        width: 100%;
+        height: 368px;
+        padding: 3.75rem 1.3rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .slider_text {
+        width: 26.625rem;
+        height: 4.5rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .slider_textone {
+        width: 100%;
+        height: 24px;
+        color: #FFFFFF;
+        font-family: "Allura", cursive;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 1px;
+    }
+    .slider_texttwo {
+        width: 100%;
+        height: 36px;
+        margin: 0;
+        padding-top: 0.75rem;
+        padding-left: 0.125rem;
+        color: #FFFFFF;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36.48px;
+        letter-spacing: 4px;
+    }
+    .slider_block {
+        width: 66.458vw;
+        height: 200px;
+        padding-top: 1.25rem;
+        gap: 1.25rem;
+        display: flex;
+        overflow: visible;
+        position: relative;
+    }
+    .slider_word {
+        padding-top: 3.1875rem;
+        color: #FFFFFF;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 5rem;
+        font-weight: 600;
+        line-height: 97.52px;
+        text-align: center;
+    }
+    .slider_image {
+        width: 12.5rem;
+        height: 12.5rem;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    .arrows {
+        width: 90%;
+        height: 56px;
+        padding-top: 1.25rem;
+        display: flex;
+        justify-content: flex-end;
+        gap: 1.25rem;
+    }
+    .arrows button {
+        width: 3.5rem;
+        height:  3.5rem;
+        border-radius: 20px;
+        background-color: transparent;
+        border: 1px solid #FFFFFF;
+        cursor: pointer;
+    }
+    .best_gifts {
+        height: auto;
+    }
+    .gifts_container {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 3.75rem 0;
+        margin: 0 auto;
+    }
+    .gifts_text {
+        width: 50vw;
+        height: 72px;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+    .gifts_textone {
+        width: 100%;
+        height: 24px;
+        color: #FFFFFF;
+        font-family: "Allura", cursive;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 1px;
+    }
+    .gifts_texttwo {
+        width: 100%;
+        height: 36px;
+        margin: 0;
+        padding-top: 0.75rem;
+        padding-left: 0.125rem;
+        color: #FFFFFF;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36.48px;
+        letter-spacing: 4px;
+    }
+    .gifts_block {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 1.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .gifts_example {
+        width: 310px;
+        height: 342px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 1005px) and (min-width: 769px) {
+    .gifts_block {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 1.25rem;
+        display: flex;
+        gap: 1rem;
     }
 }
 @media screen and (max-width: 768px) {
@@ -912,6 +1085,7 @@ footer {
         width: 426px;
         height: 404px;
         margin: 0 171px 60px 171px;
+        padding-top: 57px;
     }
     .about {
         width: 768px;
