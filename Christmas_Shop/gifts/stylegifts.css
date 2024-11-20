@@ -60,7 +60,6 @@ header {
     width: 21px;
     height: 2px;
     background-color: #181C29;
-    margin: 6px 0;
 }
 .header_navigation {
     width: 376px;
@@ -603,11 +602,15 @@ footer {
         display: none;
     }
     .burger_menu {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
         padding-right: 0;
         margin-right: 0;
-        margin-top: 21px;
-        margin-left: 9px;
+        margin-top: 12px;
+        margin-left: 0;
         transition: 1s;
         cursor: pointer;
     }
