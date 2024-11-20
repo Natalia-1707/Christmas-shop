@@ -85,6 +85,7 @@ header {
 .nav li a {
     padding: 12px 20px 12px 20px;
     font-family: 'Montserrat', sans-serif;
+    color:#181C29;
     font-size: 12px;
     font-weight: 600;
     line-height: 15.6px;
@@ -97,8 +98,11 @@ header {
     border-radius: 12px;
     transition: 1s;
 }
-.non_interactive {
+.nav li a.non_interactive {
     pointer-events: none;
+    color: #FF4646;
+    background-color: #FF46461A;
+    border-radius: 12px;
 }
 /* Main */
 /* Section gifts */
