@@ -107,7 +107,7 @@ header {
 /* Main */
 /* Section gifts */
 .gifts {
-    width: 1440px;
+    width: 100%;
     height: 1394px;
     margin: 0;
     padding: 0;
@@ -182,6 +182,8 @@ header {
     height: 342px;
     display: flex;
     flex-direction: column;
+    background-color: #ECF3F8;
+    border-radius: 20px;
     cursor: pointer;
 }
 .gift img {
@@ -195,8 +197,7 @@ header {
     width: 310px;
     height: 112px;
     background-color: #FFFFFF;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 20px;
 }
 .gift_work,
 .gift_health,
@@ -365,6 +366,208 @@ footer {
 }
 
 /*-----------MEDIA--------- */
+@media screen and (max-width: 1439px) and (min-width: 769px) {
+    html {
+        width: 100%;
+    }
+    body {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+    .header_container {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .logo_block a{
+        display: flex;
+        align-items: center;
+        width: 8.8125rem;
+        margin: 0.75rem;
+        cursor: pointer;
+    }
+    .logo {
+        margin: 0.5rem 0.5rem 0.5rem 1.25rem;
+    }
+    .logo_text {
+        margin: 0;
+    }
+    .header_navigation {
+        margin-right: 0;
+    }
+    .navigation {
+        width: 23.5rem;
+        height: 40px;
+        margin: 0;
+    }
+    .nav{
+        width: 23.5rem;
+        height: 40px;
+        display: flex;
+        margin: 0;
+        padding-left: 0;
+        padding-top: 0.625rem;
+        gap: 0.5rem;
+        list-style-type: none;
+    }
+    .gifts {
+        width: 100%;
+        height: auto;
+    }
+    .gifts_container {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 3.75rem 0;
+        margin: 0 auto;
+    }
+    .headerone {
+        width: 50vw;
+        height: auto;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    .filters {
+        width: 70vw;
+        height: 2.5rem;
+        margin: 0 auto;
+        padding-top: 1.25rem;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    .gifts_block {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 1.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .footer_container {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 2.875rem;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contacts_block {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 1.875rem;
+        display: flex;
+        gap: 0.75rem;
+    }
+    .contacts a{
+        width: 100%;
+        height: 12.75rem;
+        background-color: #ECF3F8;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .footer_img {
+        padding-top: 1.4rem;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+    .connect {
+        padding-top: 0.75rem;
+        margin: 0 auto;
+        color: #181C29;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36.48px;
+        letter-spacing: 4px;
+        text-align: center;
+    }
+    .calltoaction {
+        padding-top: 0.75rem;
+        margin: 0 auto;
+        color: #181C29;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24.32px;
+        letter-spacing: 1.28px;
+        text-align: center;
+    }
+    .footer_signature {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 3.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .social {
+        display: flex;
+        padding-top: 0;
+        padding-left: 0;
+        margin: 0 auto;
+        gap: 0.75rem;
+    }
+    .year {
+        margin: 0 auto;
+        padding-top: 0.75rem;
+        padding-left: 0;
+        color: #181C29;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23.68px;
+        text-align: center;
+    }
+    .rsschool {
+        margin: 0 auto;
+        padding-top: 0.75rem;
+        padding-left: 0;
+        color: #181C29;
+        font-family: "Allura", cursive;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 1px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+@media (hover: none) and (pointer: coarse) and (max-width: 1028px) {
+    .nav li a:hover,
+    .gift:hover .gift_name,
+    .contacts:hover .connect,
+    .contacts:hover .calltoaction,
+    .social_img:hover,
+    .rsschool:hover {
+        background-color: inherit;
+        color: inherit;
+        text-decoration: none;
+        filter: inherit;
+        transition: inherit;
+    }
+}
 @media screen and (max-width: 768px) {
     html {
         max-width: 768px;
@@ -496,7 +699,151 @@ footer {
         padding-left: 231px; 
     }
 }
-
+@media screen and (max-width: 767px) and (min-width: 381px) {
+    html {
+        width: 100%;
+    }
+    body {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+    .header_container {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .burger_menu {
+        display: block;
+        padding-right: 0;
+        margin-right: 0;
+        margin-top: 1.3125rem;
+        margin-left: 0;
+        transition: 1s;
+        cursor: pointer;
+    }
+    .burger {
+        display: block;
+    }
+    .logo_block a{
+        display: flex;
+        align-items: center;
+        width: 8.8125rem;
+        margin: 0.75rem;
+        cursor: pointer;
+    }
+    .logo {
+        margin: 0.5rem 0.5rem 0.5rem 1.25rem;
+    }
+    .logo_text {
+        margin: 0;
+    }
+    .gifts {
+        width: 100%;
+        height: auto;
+    }
+    .gifts_container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 3.75rem 0;
+        margin: 0 auto;
+    }
+    .headerone {
+        width: 50vw;
+        height: auto;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    .filters {
+        width: 100%;
+        height: 2.5rem;
+        margin: 0 auto;
+        padding-top: 1.25rem;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        gap: 0;
+    }
+    .filter {
+        padding: 0.75rem 0.5rem 0.75rem 0.5rem;
+    }
+    .gifts_block {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 1.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .footer_container {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .contacts_block {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .contacts a {
+        width: 100%;
+    }
+    .footer_img {
+        margin: 0 auto;
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+    .connect {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 0.875rem;
+        margin: 0 auto;
+    }
+    .calltoaction {
+        width: 100%;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+    .footer_signature {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .social {
+        display: flex;
+        padding-top: 0;
+        padding-left: 0;
+        margin: 0 auto;
+        gap: 0.75rem;
+    }
+    .year {
+        margin: 0 auto;
+        padding-top: 0.75rem;
+        padding-left: 0;
+        text-align: center;
+    }
+    .rsschool {
+        margin: 0 auto;
+        padding-top: 0.75rem;
+        padding-left: 0;
+    }
+}
 @media screen and (max-width: 380px) {
     html {
         max-width: 380px;

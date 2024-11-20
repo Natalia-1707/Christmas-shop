@@ -320,7 +320,6 @@ header {
     justify-content: flex-end;
     gap: 20px;
 }
-
 .arrows button {
     width: 56px;
     height: 56px;
@@ -450,6 +449,8 @@ header {
     height: 342px;
     display: flex;
     flex-direction: column;
+    background-color: #ECF3F8;
+    border-radius: 20px;
     cursor: pointer;
 }
 .gifts_example img {
@@ -463,8 +464,7 @@ header {
     width: 310px;
     height: 112px;
     background-color: #FFFFFF;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 20px;
 }
 .gift_work,
 .gift_health,
@@ -1125,6 +1125,51 @@ footer {
         letter-spacing: 1px;
         text-align: center;
         cursor: pointer;
+    }
+}
+@media (hover: none) and (pointer: coarse) and (max-width: 1028px) {
+    .nav li a:hover ,
+    .gifts_example:hover .gift_name,
+    .contacts:hover .calltoaction,
+    .rsschool:hover,
+    .social_img:hover,
+    .contacts:hover .connect {
+        background-color: inherit;
+        color: inherit;
+        text-decoration: none;
+        filter: inherit;
+        transition: inherit;
+    }
+}
+@media (max-width: 1028px) {
+    .arrows button:hover {
+        background-color: transparent;
+        color: inherit;
+        transition: none;
+    }
+
+    .arrows button:hover .left::after,
+    .arrows button:hover .right::after {
+        border-top: 1px solid #FFFFFF;
+        border-left: 1px solid #FFFFFF;
+        transition: none;
+    }
+
+    .arrows button:hover .left::before,
+    .arrows button:hover .right::before {
+        background-color: #FFFFFF;
+        transition: none;
+    }
+    .button_hero:hover {
+        background-color: #181C29;
+        color: #FFFFFF;
+        transition: none;
+    }
+
+    .cta_block button:hover {
+        background-color: #181C29;
+        color: #FFFFFF;
+        transition: none;
     }
 }
 @media screen and (max-width: 1005px) and (min-width: 769px) {
@@ -1815,7 +1860,7 @@ footer {
         height: 1404px;
     }
     .gifts_example {
-        padding-left: 27px;
+        margin-left: 27px;
     }
     .cta {
         width: 380px;
