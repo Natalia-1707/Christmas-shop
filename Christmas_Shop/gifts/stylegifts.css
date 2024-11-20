@@ -406,12 +406,12 @@ footer {
     }
     .navigation {
         width: 23.5rem;
-        height: 40px;
+        height: 2.5rem;
         margin: 0;
     }
     .nav{
         width: 23.5rem;
-        height: 40px;
+        height: 2.5rem;
         display: flex;
         margin: 0;
         padding-left: 0;
@@ -494,24 +494,10 @@ footer {
     .connect {
         padding-top: 0.75rem;
         margin: 0 auto;
-        color: #181C29;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 36.48px;
-        letter-spacing: 4px;
-        text-align: center;
     }
     .calltoaction {
         padding-top: 0.75rem;
         margin: 0 auto;
-        color: #181C29;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 24.32px;
-        letter-spacing: 1.28px;
-        text-align: center;
     }
     .footer_signature {
         width: 100%;
@@ -532,25 +518,11 @@ footer {
         margin: 0 auto;
         padding-top: 0.75rem;
         padding-left: 0;
-        color: #181C29;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 23.68px;
-        text-align: center;
     }
     .rsschool {
         margin: 0 auto;
         padding-top: 0.75rem;
         padding-left: 0;
-        color: #181C29;
-        font-family: "Allura", cursive;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 1px;
-        text-align: center;
-        cursor: pointer;
     }
 }
 @media (hover: none) and (pointer: coarse) and (max-width: 1028px) {

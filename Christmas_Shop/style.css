@@ -793,12 +793,12 @@ footer {
     }
     .navigation {
         width: 23.5rem;
-        height: 40px;
+        height: 2.5rem;
         margin: 0;
     }
     .nav{
         width: 23.5rem;
-        height: 40px;
+        height: 2.5rem;
         display: flex;
         margin: 0;
         padding-left: 0;
@@ -808,40 +808,18 @@ footer {
     }
     .hero_texttwo {
         width: 26.625rem;
-        height: 24px;
+        height: 1.5rem;
         text-align: center;
-    }
-    .hero_texttwo span {
-        color: #FFFFFF;
-        font-family: "Allura", cursive;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 1px;
     }
     .hero_textone {
         width: 26.625rem;
         height: auto;
         margin: 0 auto;
     }
-    .hero_textone span {
-        color: #FFFFFF;
-        font-family: "Allura", cursive;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 1px;
-    }
     .header_one {
         width: 45vw;
         height: auto;
         margin: 0 auto;
-        color: #FFFFFF;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 32px;
-        font-weight: 600;
-        line-height: 48px;
-        letter-spacing: 5.5px
     }
     .hero_texttwo {
         width: 26.625rem;
@@ -855,13 +833,12 @@ footer {
     }
     .img_about {
         width: 46.771vw;
-        height: 528px;
-        border-radius: 20px;
+        height: 33rem;
         object-fit: cover;
     }
     .about_text_block {
         width: 33.229vw;
-        height: 328px;
+        height: 10rem;
         margin: 2.875rem 5rem;
     }
     .about_textone {
@@ -884,7 +861,7 @@ footer {
     }
     .slider_container {
         width: 100%;
-        height: 368px;
+        height: 23rem;
         padding: 3.75rem 1.3rem;
         display: flex;
         flex-direction: column;
@@ -897,30 +874,18 @@ footer {
     }
     .slider_textone {
         width: 100%;
-        height: 24px;
-        color: #FFFFFF;
-        font-family: "Allura", cursive;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 1px;
+        height: 1.5rem;
     }
     .slider_texttwo {
         width: 100%;
-        height: 36px;
+        height: 2.25rem;
         margin: 0;
         padding-top: 0.75rem;
         padding-left: 0.125rem;
-        color: #FFFFFF;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 36.48px;
-        letter-spacing: 4px;
     }
     .slider_block {
         width: 66.458vw;
-        height: 200px;
+        height: 12.5rem;
         padding-top: 1.25rem;
         gap: 1.25rem;
         display: flex;
@@ -929,22 +894,15 @@ footer {
     }
     .slider_word {
         padding-top: 3.1875rem;
-        color: #FFFFFF;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 5rem;
-        font-weight: 600;
-        line-height: 97.52px;
-        text-align: center;
     }
     .slider_image {
         width: 12.5rem;
         height: 12.5rem;
-        border-radius: 20px;
         object-fit: cover;
     }
     .arrows {
         width: 90%;
-        height: 56px;
+        height: 3.5rem;
         padding-top: 1.25rem;
         display: flex;
         justify-content: flex-end;
@@ -953,10 +911,6 @@ footer {
     .arrows button {
         width: 3.5rem;
         height:  3.5rem;
-        border-radius: 20px;
-        background-color: transparent;
-        border: 1px solid #FFFFFF;
-        cursor: pointer;
     }
     .best_gifts {
         height: auto;
@@ -971,33 +925,21 @@ footer {
     }
     .gifts_text {
         width: 50vw;
-        height: 72px;
+        height: 4.5rem;
         margin: 0 auto;
         padding: 0;
         text-align: center;
     }
     .gifts_textone {
         width: 100%;
-        height: 24px;
-        color: #FFFFFF;
-        font-family: "Allura", cursive;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 1px;
+        height: 1.5rem;
     }
     .gifts_texttwo {
         width: 100%;
-        height: 36px;
+        height: 2.25rem;
         margin: 0;
         padding-top: 0.75rem;
         padding-left: 0.125rem;
-        color: #FFFFFF;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 36.48px;
-        letter-spacing: 4px;
     }
     .gifts_block {
         width: 100%;
@@ -1020,13 +962,7 @@ footer {
         width: 40vw;
         height: auto;
         margin: 0 auto;
-        padding-top: 60px;
-        color: #FFFFFF;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 36.48px;
-        letter-spacing: 4px;
+        padding-top: 3.75rem;
     }
     .countdown {
         margin: 0 auto;
@@ -1067,24 +1003,10 @@ footer {
     .connect {
         padding-top: 0.75rem;
         margin: 0 auto;
-        color: #181C29;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 36.48px;
-        letter-spacing: 4px;
-        text-align: center;
     }
     .calltoaction {
         padding-top: 0.75rem;
         margin: 0 auto;
-        color: #181C29;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 24.32px;
-        letter-spacing: 1.28px;
-        text-align: center;
     }
     .footer_signature {
         width: 100%;
@@ -1105,25 +1027,11 @@ footer {
         margin: 0 auto;
         padding-top: 0.75rem;
         padding-left: 0;
-        color: #181C29;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 23.68px;
-        text-align: center;
     }
     .rsschool {
         margin: 0 auto;
         padding-top: 0.75rem;
         padding-left: 0;
-        color: #181C29;
-        font-family: "Allura", cursive;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 1px;
-        text-align: center;
-        cursor: pointer;
     }
 }
 @media (hover: none) and (pointer: coarse) and (max-width: 1028px) {
@@ -1410,7 +1318,7 @@ footer {
         gap: 0.5rem;
         padding-right: 0;
         margin-right: 0;
-        margin-top: 12px;
+        margin-top: 0.75rem;
         margin-left: 0;
         transition: 1s;
         cursor: pointer;
@@ -1438,14 +1346,6 @@ footer {
         align-items: center;
         margin: 0 auto;
     }
-    .hero_texttwo span {
-        color: #FFFFFF;
-        font-family: "Allura", cursive;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 1px;
-    }
     .hero_textone {
         width: 22.75rem;
         height: auto;
@@ -1455,12 +1355,6 @@ footer {
         width: 100%;
         height: auto;
         margin: 0 auto;
-        color: #FFFFFF;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 32px;
-        font-weight: 600;
-        line-height: 48px;
-        letter-spacing: 5.5px
     }
     .hero_texttwo {
         width: 100%;
@@ -1486,7 +1380,6 @@ footer {
     .img_about {
         width: 100%;
         height: 33rem;
-        border-radius: 20px;
         object-fit: cover;
     }
     .about_text_block {
@@ -1542,7 +1435,7 @@ footer {
     }
     .slider_block {
         width: 100%;
-        height: 200px;
+        height: 12.5rem;
         padding-top: 1.25rem;
         gap: 1.25rem;
         display: flex;
@@ -1556,7 +1449,6 @@ footer {
     .slider_image {
         width: 12.5rem;
         height: 12.5rem;
-        border-radius: 20px;
         object-fit: cover;
     }
     .arrows {
@@ -1570,7 +1462,6 @@ footer {
     .arrows button {
         width: 3.5rem;
         height:  3.5rem;
-        border-radius: 20px;
         background-color: transparent;
         border: 1px solid #FFFFFF;
         cursor: pointer;
@@ -1588,33 +1479,21 @@ footer {
     }
     .gifts_text {
         width: 100%;
-        height: 72px;
+        height: 4.5rem;
         margin: 0 auto;
         padding: 0;
         text-align: center;
     }
     .gifts_textone {
         width: 100%;
-        height: 24px;
-        color: #FFFFFF;
-        font-family: "Allura", cursive;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 1px;
+        height: 1.5rem;
     }
     .gifts_texttwo {
         width: 100%;
-        height: 36px;
+        height: 2.25rem;
         margin: 0;
         padding-top: 0.75rem;
         padding-left: 0.125rem;
-        color: #FFFFFF;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 36.48px;
-        letter-spacing: 4px;
     }
     .gifts_block {
         width: 100%;
