@@ -89,6 +89,7 @@ header {
     font-weight: 600;
     line-height: 15.6px;
     letter-spacing: 0.6px;
+    border-radius: 12px;
     cursor: pointer;
 }
 .nav li a:hover {
@@ -156,6 +157,7 @@ header {
     font-weight: 600;
     line-height: 15.6px;
     letter-spacing: 0.6px;
+    border-radius: 12px;
     cursor: pointer;
 }
 .filter:hover,
@@ -527,6 +529,7 @@ footer {
 }
 @media (hover: none) and (pointer: coarse) and (max-width: 1028px) {
     .nav li a:hover,
+    .filter:hover, 
     .gift:hover .gift_name,
     .contacts:hover .connect,
     .contacts:hover .calltoaction,
@@ -537,6 +540,12 @@ footer {
         text-decoration: none;
         filter: inherit;
         transition: inherit;
+    }
+}
+@media (max-width: 1028px) {
+    .filter:hover {
+        color: #FFFFFF;
+        background-color: transparent;
     }
 }
 @media screen and (max-width: 768px) {

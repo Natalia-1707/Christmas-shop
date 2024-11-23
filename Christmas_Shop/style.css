@@ -89,6 +89,7 @@ header {
     font-weight: 600;
     line-height: 15.6px;
     letter-spacing: 0.6px;
+    border-radius: 12px;
     cursor: pointer;
 }
 .nav li a:hover {
