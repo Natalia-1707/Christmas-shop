@@ -48,6 +48,19 @@ header {
     line-height: 15.6px;
     letter-spacing: 0.5px;
 }
+.burger_menu {
+    display: none;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    cursor: pointer;
+}
+.burger {
+    display: none;
+    width: 21px;
+    height: 2px;
+    background-color: #181C29;
+}
 .header_navigation {
     width: 376px;
     height: 40px;
@@ -71,10 +84,12 @@ header {
 .nav li a{
     padding: 12px 20px 12px 20px;
     font-family: 'Montserrat', sans-serif;
+    color:#181C29;
     font-size: 12px;
     font-weight: 600;
     line-height: 15.6px;
     letter-spacing: 0.6px;
+    border-radius: 12px;
     cursor: pointer;
 }
 .nav li a:hover {
@@ -86,7 +101,7 @@ header {
 /* Main */
 /* Section hero */
 .hero {
-    width: 1440px;
+    width: 100%;
     height: 524px;
     background-color: #FF4646;
     background-image: url(img/bg-ball.png), url(img/bg-snow.png);
@@ -96,13 +111,12 @@ header {
     border-top-left-radius: 20px;
 }
 .hero_container {
-    width: 426px;
-    height: 404px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0px 507px;
-    padding-top: 57px;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 115px;
 }
 .hero_textone {
     width: 426px;
@@ -168,7 +182,7 @@ header {
 
 /* Section about */
 .about {
-    width: 1440px;
+    width: 100%;
     height: 588px;
     background-color: #FF4646;
     background-image: url(img/bg-snow.png);
@@ -184,9 +198,6 @@ header {
     background-color: #FFFFFF;
     border-radius: 20px;
 }
-.about_text_block {
-    border-radius: 20px;
-}
 .img_about {
     width: 638px;
     height: 528px;
@@ -196,6 +207,7 @@ header {
     width: 426px;
     height: 328px;
     margin: 100px 152px 100px 60px;
+    border-radius: 20px;
 }
 .about_textone {
     width: 426px;
@@ -232,7 +244,7 @@ header {
 
 /* Section slider */
 .slider {
-    width: 1440px;
+    width: 100%;
     height: 488px;
     background-color: #FF4646;
     background-image: url(img/bg-snow.png);
@@ -308,7 +320,6 @@ header {
     justify-content: flex-end;
     gap: 20px;
 }
-
 .arrows button {
     width: 56px;
     height: 56px;
@@ -383,7 +394,7 @@ header {
 
 /* Section best gifts */
 .best_gifts {
-    width: 1440px;
+    width: 100%;
     height: 554px;
     background-color: #FF4646;
     background-image: url(img/bg-snow.png);
@@ -438,6 +449,8 @@ header {
     height: 342px;
     display: flex;
     flex-direction: column;
+    background-color: #ECF3F8;
+    border-radius: 20px;
     cursor: pointer;
 }
 .gifts_example img {
@@ -451,8 +464,7 @@ header {
     width: 310px;
     height: 112px;
     background-color: #FFFFFF;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 20px;
 }
 .gift_work,
 .gift_health,
@@ -492,7 +504,7 @@ header {
 
 /* Section CTA */
 .cta {
-    width: 1440px;
+    width: 100%;
     height: 668px;
     background-color: #FF4646;
     background-image: url(img/bg-snow.png), url(img/bgforest.png);
@@ -502,13 +514,14 @@ header {
     border-bottom-right-radius: 20px;
 }
 .cta_container {
-    width: 1276px;
-    height: 548px;
-    padding: 60px 82px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 60px;
 }
 .cta_block {
-    width: 426px;
-    height: 428px;
     padding: 60px 425px;
     text-align: center;
 }
@@ -737,4 +750,1097 @@ footer {
 .rsschool:hover {
     color: #FF4646;
     transition: 0.8s;
+}
+
+/*-----------MEDIA--------- */
+@media screen and (max-width: 1439px) and (min-width: 769px) {
+    html {
+        width: 100%;
+    }
+    body {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+    .header_container {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .logo_block a{
+        display: flex;
+        align-items: center;
+        width: 8.8125rem;
+        margin: 0.75rem;
+        cursor: pointer;
+    }
+    .logo {
+        margin: 0.5rem 0.5rem 0.5rem 1.25rem;
+    }
+    .logo_text {
+        margin: 0;
+    }
+    .header_navigation {
+        margin-right: 0;
+    }
+    .navigation {
+        width: 23.5rem;
+        height: 2.5rem;
+        margin: 0;
+    }
+    .nav{
+        width: 23.5rem;
+        height: 2.5rem;
+        display: flex;
+        margin: 0;
+        padding-left: 0;
+        padding-top: 0.625rem;
+        gap: 0.5rem;
+        list-style-type: none;
+    }
+    .hero_texttwo {
+        width: 26.625rem;
+        height: 1.5rem;
+        text-align: center;
+    }
+    .hero_textone {
+        width: 26.625rem;
+        height: auto;
+        margin: 0 auto;
+    }
+    .header_one {
+        width: 45vw;
+        height: auto;
+        margin: 0 auto;
+    }
+    .hero_texttwo {
+        width: 26.625rem;
+        height: auto;
+        margin: 0 auto;
+    }
+    .about_container {
+        width: 90vw;
+        margin: 0 auto;
+        display: flex;
+    }
+    .img_about {
+        width: 46.771vw;
+        height: 33rem;
+        object-fit: cover;
+    }
+    .about_text_block {
+        width: 33.229vw;
+        height: 10rem;
+        margin: 2.875rem 5rem;
+    }
+    .about_textone {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 2.75rem;
+    }
+    .header_two {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 1.7rem;
+    }
+    .about_texttwo {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 1.7rem;
+    }
+    .slider_container {
+        width: 100%;
+        height: 23rem;
+        padding: 3.75rem 1.3rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .slider_text {
+        width: 26.625rem;
+        height: 4.5rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .slider_textone {
+        width: 100%;
+        height: 1.5rem;
+    }
+    .slider_texttwo {
+        width: 100%;
+        height: 2.25rem;
+        margin: 0;
+        padding-top: 0.75rem;
+        padding-left: 0.125rem;
+    }
+    .slider_block {
+        width: 66.458vw;
+        height: 12.5rem;
+        padding-top: 1.25rem;
+        gap: 1.25rem;
+        display: flex;
+        overflow: visible;
+        position: relative;
+    }
+    .slider_word {
+        padding-top: 3.1875rem;
+    }
+    .slider_image {
+        width: 12.5rem;
+        height: 12.5rem;
+        object-fit: cover;
+    }
+    .arrows {
+        width: 90%;
+        height: 3.5rem;
+        padding-top: 1.25rem;
+        display: flex;
+        justify-content: flex-end;
+        gap: 1.25rem;
+    }
+    .arrows button {
+        width: 3.5rem;
+        height:  3.5rem;
+    }
+    .best_gifts {
+        height: auto;
+    }
+    .gifts_container {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 3.75rem 0;
+        margin: 0 auto;
+    }
+    .gifts_text {
+        width: 50vw;
+        height: 4.5rem;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+    .gifts_textone {
+        width: 100%;
+        height: 1.5rem;
+    }
+    .gifts_texttwo {
+        width: 100%;
+        height: 2.25rem;
+        margin: 0;
+        padding-top: 0.75rem;
+        padding-left: 0.125rem;
+    }
+    .gifts_block {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 1.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .cta_block {
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+    .cta_text {
+        width: 40vw;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 3.75rem;
+    }
+    .countdown {
+        margin: 0 auto;
+    }
+    .footer_container {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 2.875rem;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contacts_block {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 1.875rem;
+        display: flex;
+        gap: 0.75rem;
+    }
+    .contacts a{
+        width: 100%;
+        height: 12.75rem;
+        background-color: #ECF3F8;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .footer_img {
+        padding-top: 1.4rem;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+    .connect {
+        padding-top: 0.75rem;
+        margin: 0 auto;
+    }
+    .calltoaction {
+        padding-top: 0.75rem;
+        margin: 0 auto;
+    }
+    .footer_signature {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 3.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .social {
+        display: flex;
+        padding-top: 0;
+        padding-left: 0;
+        margin: 0 auto;
+        gap: 0.75rem;
+    }
+    .year {
+        margin: 0 auto;
+        padding-top: 0.75rem;
+        padding-left: 0;
+    }
+    .rsschool {
+        margin: 0 auto;
+        padding-top: 0.75rem;
+        padding-left: 0;
+    }
+}
+@media (hover: none) and (pointer: coarse) and (max-width: 1028px) {
+    .nav li a:hover ,
+    .gifts_example:hover .gift_name,
+    .contacts:hover .calltoaction,
+    .rsschool:hover,
+    .social_img:hover,
+    .contacts:hover .connect {
+        background-color: inherit;
+        color: inherit;
+        text-decoration: none;
+        filter: inherit;
+        transition: inherit;
+    }
+}
+@media (max-width: 1028px) {
+    .arrows button:hover {
+        background-color: transparent;
+        color: inherit;
+        transition: none;
+    }
+
+    .arrows button:hover .left::after,
+    .arrows button:hover .right::after {
+        border-top: 1px solid #FFFFFF;
+        border-left: 1px solid #FFFFFF;
+        transition: none;
+    }
+
+    .arrows button:hover .left::before,
+    .arrows button:hover .right::before {
+        background-color: #FFFFFF;
+        transition: none;
+    }
+    .button_hero:hover {
+        background-color: #181C29;
+        color: #FFFFFF;
+        transition: none;
+    }
+
+    .cta_block button:hover {
+        background-color: #181C29;
+        color: #FFFFFF;
+        transition: none;
+    }
+}
+@media screen and (max-width: 1005px) and (min-width: 769px) {
+    .gifts_block {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 1.25rem;
+        display: flex;
+        gap: 1rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    html {
+        max-width: 768px;
+        scroll-behavior: smooth;
+        display: block;
+        margin: auto;
+    }
+    body {
+        width: 768px;
+        margin: 0;
+    }
+    main {
+        width: 768px;
+        margin: 0;
+    }
+    header {
+        width: 768px;
+        height: 64px;
+        margin: 0;
+    }
+    .header_container {
+        width: 752px;
+        height: 64px;
+        margin: 0px 8px;
+    }
+    .logo_block a {
+        width: 141px;
+        height: 40px;
+        margin: 12px 571px 12px 0px;
+        cursor: pointer;
+    }
+    .header_navigation {
+        display: none;
+    }
+    .burger_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding-right: 0;
+        margin-right: 0;
+        margin-top: 12px;
+        margin-left: 0;
+        transition: 1s;
+        cursor: pointer;
+    }
+    .burger {
+        display: block;
+    } 
+    .hero {
+        width: 100%;
+        height: 524px;
+    }
+    .hero_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding-top: 115px;
+    }
+    .about {
+        width: 100%;
+        height: 588px;
+    }
+    .about_container {
+        width: 752px;
+        height: 528px;
+        margin: 0 8px 60px 8px;
+    }
+    .about_text_block {
+        width: 256px;
+        height: 436px;
+        margin: 46px 60px;
+    }
+    .img_about {
+        width: 376px;
+        height: 528px;
+        object-fit: cover;
+    }
+    .text_about {
+        width: 256px;
+        height: 436px;
+    }
+    .header_two {
+        width: 256px;
+        height: 108px;
+    }
+    .about_texttwo {
+        width: 256px;
+        height: 144px;
+    }
+    .slider {
+        width: 100%;
+        height: 488px;
+    }
+    .slider_container {
+        width: 752px;
+        height: 368px;
+        padding: 61px 0 0 0;
+        margin-left: 8px;
+    }
+    .slider_text {
+        width: 426px;
+        height: 72px;
+        margin-left: 163px;
+        padding: 0;
+    }
+    .arrows {
+        width: 752px;
+        height: 56px;
+    }
+    .best_gifts {
+        width: 100%;
+        height: 910px;
+    }
+    .gifts_container {
+        width: 638px;
+        height: 788px;
+        margin-left: 8px;
+        padding: 61px 60px 0 60px;
+    }
+    .gifts_text {
+        width: 426px;
+        height: 72px;
+        margin-left: 103px;
+        padding: 0;
+    }
+    .gifts_block {
+        width: 638px;
+        height: 696px;
+        flex-wrap: wrap;
+    }
+    .cta {
+        width: 100%;
+        height: 668px;
+    }
+    .cta_block {
+        width: 426px;
+        height: 428px;
+        padding-top: 58px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    footer {
+        width: 768px;
+        height: 870px;
+    }
+    .footer_container {
+        width: 752px;
+        height: 808px;
+        padding: 58px 0 0 0;
+        margin-left: 8px;
+    }
+    .contacts_block {
+        width: 752px;
+        height: 636px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .contacts a {
+        width: 752px;
+        height: 204px;
+    }
+    .footer_img {
+        margin-left: 336px;
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+    .connect {
+        width: 712px;
+        height: 36px;
+        padding-left: 0;
+        padding-top: 14px;
+        margin-left: 24px;
+    }
+    .calltoaction {
+        width: 712px;
+        height: 24px;
+        padding-left: 0;
+        margin-left: 20px;
+    }
+    .footer_signature {
+        width: 752px;
+        height: 112px;
+    }
+    .social {
+        padding-left: 278px;
+    }
+    .year {
+        padding-left: 225.5px;
+    }
+    .rsschool {
+        padding-left: 231px; 
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 381px) {
+    html {
+        width: 100%;
+    }
+    body {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+    .header_container {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .burger_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding-right: 0;
+        margin-right: 0;
+        margin-top: 0.75rem;
+        margin-left: 0;
+        transition: 1s;
+        cursor: pointer;
+    }
+    .burger {
+        display: block;
+    }
+    .logo_block a{
+        display: flex;
+        align-items: center;
+        width: 8.8125rem;
+        margin: 0.75rem;
+        cursor: pointer;
+    }
+    .logo {
+        margin: 0.5rem 0.5rem 0.5rem 1.25rem;
+    }
+    .logo_text {
+        margin: 0;
+    }
+    .hero_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .hero_textone {
+        width: 22.75rem;
+        height: auto;
+        margin: 0 auto;
+    }
+    .header_one {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .hero_texttwo {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .button_hero {
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .about {
+        height: auto;
+    }
+    .about_container {
+        width: 90vw;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .img_about {
+        width: 100%;
+        height: 33rem;
+        object-fit: cover;
+    }
+    .about_text_block {
+        width: 70vw;
+        height: auto;
+        margin: 2.875rem 3rem;
+    }
+    .text_about {
+        width: 70vw;
+        height: auto;
+    }
+    .about_textone {
+        width: 70vw;
+        height: auto;
+        margin: 0;
+        padding-top: 0.5rem;
+    }
+    .header_two {
+        width: 70vw;
+        height: auto;
+        margin: 0;
+        padding-top: 1rem;
+    }
+    .about_texttwo {
+        width: 70vw;
+        height: auto;
+        margin: 0;
+        padding-top: 1rem;
+    }
+    .slider_container {
+        width: 95%;
+        height: 23rem;
+        padding: 3.75rem 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .slider_text {
+        width: 90%;
+        height: 4.5rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .slider_textone {
+        width: 100%;
+        height: 1.5rem;
+    }
+    .slider_texttwo {
+        width: 100%;
+        height: 2.25rem;
+        margin: 0;
+        padding-top: 0.75rem;
+        padding-left: 0.125rem;
+    }
+    .slider_block {
+        width: 100%;
+        height: 12.5rem;
+        padding-top: 1.25rem;
+        gap: 1.25rem;
+        display: flex;
+        overflow: visible;
+        position: relative;
+    }
+    .slider_word {
+        padding-top: 3.1875rem;
+        text-align: center;
+    }
+    .slider_image {
+        width: 12.5rem;
+        height: 12.5rem;
+        object-fit: cover;
+    }
+    .arrows {
+        width: 100%;
+        height: 3.5rem;
+        padding-top: 1.25rem;
+        display: flex;
+        justify-content: flex-end;
+        gap: 1.25rem;
+    }
+    .arrows button {
+        width: 3.5rem;
+        height:  3.5rem;
+        background-color: transparent;
+        border: 1px solid #FFFFFF;
+        cursor: pointer;
+    }
+    .best_gifts {
+        height: auto;
+    }
+    .gifts_container {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 3.75rem 0;
+        margin: 0 auto;
+    }
+    .gifts_text {
+        width: 100%;
+        height: 4.5rem;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+    .gifts_textone {
+        width: 100%;
+        height: 1.5rem;
+    }
+    .gifts_texttwo {
+        width: 100%;
+        height: 2.25rem;
+        margin: 0;
+        padding-top: 0.75rem;
+        padding-left: 0.125rem;
+    }
+    .gifts_block {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 1.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .cta_container {
+        padding-top: 2rem;
+    }
+    .cta_block {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 0;
+        text-align: center;
+        justify-content: center;
+    }
+    .cta_text {
+        width: 70vw;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 3.75rem;
+    }
+    .countdown {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .countdown_text {
+        width: 100%;
+        margin: 1rem auto;
+    }
+    .countdown_block {
+        margin: 1rem auto;
+    }
+    .button_gifts button {
+        margin: 1rem auto;
+    }
+    .footer_container {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .contacts_block {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .contacts a {
+        width: 100%;
+    }
+    .footer_img {
+        margin: 0 auto;
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+    .connect {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 0.875rem;
+        margin: 0 auto;
+    }
+    .calltoaction {
+        width: 100%;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+    .footer_signature {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .social {
+        display: flex;
+        padding-top: 0;
+        padding-left: 0;
+        margin: 0 auto;
+        gap: 0.75rem;
+    }
+    .year {
+        margin: 0 auto;
+        padding-top: 0.75rem;
+        padding-left: 0;
+        text-align: center;
+    }
+    .rsschool {
+        margin: 0 auto;
+        padding-top: 0.75rem;
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 380px) {
+    html {
+        max-width: 380px;
+        scroll-behavior: smooth;
+        display: block;
+        margin: auto;
+    }
+    body {
+        width: 380px;
+        margin: 0;
+    }
+    main {
+        width: 380px;
+        margin: 0;
+    }
+    header {
+        width: 380px;
+        height: 64px;
+    }
+    .header_container {
+        width: 380px;
+        height: 64px;
+        margin: 0;
+    }
+    .logo_block a{
+        margin: 12px 183px 12px 8px;
+    }
+    .hero {
+        width: 380px;
+        height: 572px;
+    }
+    .hero_container {
+        width: 364px;
+        height: 452px;
+        margin: 0;
+        padding: 60px 8px;
+    }
+    .hero_textone {
+        width: 364px;
+        height: 24px;
+        margin: 0;
+        padding-bottom: 12px;
+    }
+    .header_one {
+        width: 364px;
+        height: 192px;
+        margin: 0;
+    }
+    .button_hero {
+        margin-left: 64.5px;
+        margin-right: 64.5px;
+    }
+    .hero_texttwo {
+        width: 364px;
+        height: 24px;
+        margin: 0;
+    }
+    .about {
+        width: 380px;
+        height: 940px;
+    }
+    .about_container {
+        display: flex;
+        flex-direction: column;
+        width: 364px;
+        height: 880px;
+    }
+    .about_text_block {
+        width: 364px;
+        height: 352px;
+        margin: 0;
+        padding: 0;
+    }
+    .img_about {
+        width: 364px; 
+        height: 528px;
+    }
+    .text_about {
+        width: 324px;
+        height: 352px;
+        margin-left: 20px;
+    }
+    .about_textone {
+        width: 324px;
+        height: 24px;
+        margin-bottom: 20px;
+    }
+    .header_two {
+        width: 324px;
+        height: 72px;
+    }
+    .about_texttwo {
+        width: 324px;
+        height: 96px;
+    }
+    .slider {
+        width: 380px;
+        height: 488px;
+    }
+    .slider_container {
+        width: 364px;
+        height: 368px;
+        padding: 0;
+        margin: 60px 8px;
+    }
+    .slider_text {
+        width: 364px;
+        height: 72px;
+        margin: 0;
+        padding: 0;
+    }
+    .slider_textone {
+        width: 364px;
+        height: 24px;
+    }
+    .slider_texttwo {
+        width: 364px;
+        height: 36px;
+    }
+    .arrows {
+        width: 364px;
+        height: 56px;
+    }
+    .best_gifts {
+        width: 380px;
+        height: 1616px;
+    }
+    .gifts_container {
+        width: 364px;
+        height: 1496px;
+        padding: 60px 0 0 0;
+        margin-left: 8px;
+    }
+    .gifts_text {
+        width: 364px;
+        height: 72px;
+        padding: 0;
+        margin: 0;
+    }
+    .gifts_textone {
+        width: 364px;
+        height: 24px;
+    }
+    .gifts_texttwo {
+        width: 364px;
+        height: 36px;
+    }
+    .gifts_block {
+        display: flex;
+        flex-direction: column;
+        width: 364px;
+        height: 1404px;
+    }
+    .gifts_example {
+        margin-left: 27px;
+    }
+    .cta {
+        width: 380px;
+        height: 704px;
+    }
+    .cta_container {
+        width: 364px;
+        height: 584px;
+        margin-left: 8px;
+        padding: 0;
+    }
+    .cta_block {
+        width: 364px;
+        height: 464px;
+        margin: 0;
+        padding-top: 120px;
+    }
+    .cta_text {
+        width: 364px;
+        height: 144px;
+        letter-spacing: 3.7px;
+        padding-bottom: 20px;
+    }
+    .cta_block button {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .countdown {
+        width: 364px;
+        height: 104px;
+    }
+    .countdown_text {
+        width: 364px;
+        height: 24px;
+    }
+    .countdown_block {
+        margin-left: 10px;
+    }
+    footer {
+        width: 380px;
+        height: 928px;
+    }
+    .footer_container {
+        width: 364px;
+        height: 808px;
+    }
+    .contacts_block {
+        width: 364px;
+        height: 636px;
+    }
+    .contacts a{
+        width: 364px;
+        height: 204px;
+    }
+    .connect {
+        width: 324px;
+        height: 36px;
+        padding-top: 16px;
+    }
+    .calltoaction {
+        width: 324px;
+        height: 24px;
+    }
+    .footer_img {
+        width: 80px;
+        height: 76.84px;
+        margin: 0;
+        padding-top: 21.87px;
+        padding-left: 142px;
+    }
+    .footer_signature {
+        width: 364px;
+        height: 112px;
+        margin: 0;
+    }
+    .social {
+        width: 196px;
+        height: 40px;
+        margin-left: 84px;
+        padding-top: 6px;
+        padding-left: 0;
+    }
+    .year {
+        width: 301px;
+        height: 24px;
+        margin-left: 31.5px;
+        padding-left: 0;
+    }
+    .rsschool {
+        width: 290px;
+        height: 24px;
+        margin-left: 37px;
+        padding-left: 0;
+        letter-spacing: 1.1px;
+    }
 }

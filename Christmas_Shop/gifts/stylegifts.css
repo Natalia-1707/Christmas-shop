@@ -48,6 +48,19 @@ header {
     line-height: 15.6px;
     letter-spacing: 0.5px;
 }
+.burger_menu {
+    display: none;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    cursor: pointer;
+}
+.burger {
+    display: none;
+    width: 21px;
+    height: 2px;
+    background-color: #181C29;
+}
 .header_navigation {
     width: 376px;
     height: 40px;
@@ -71,10 +84,12 @@ header {
 .nav li a {
     padding: 12px 20px 12px 20px;
     font-family: 'Montserrat', sans-serif;
+    color:#181C29;
     font-size: 12px;
     font-weight: 600;
     line-height: 15.6px;
     letter-spacing: 0.6px;
+    border-radius: 12px;
     cursor: pointer;
 }
 .nav li a:hover {
@@ -83,13 +98,16 @@ header {
     border-radius: 12px;
     transition: 1s;
 }
-.non_interactive {
+.nav li a.non_interactive {
     pointer-events: none;
+    color: #FF4646;
+    background-color: #FF46461A;
+    border-radius: 12px;
 }
 /* Main */
 /* Section gifts */
 .gifts {
-    width: 1440px;
+    width: 100%;
     height: 1394px;
     margin: 0;
     padding: 0;
@@ -139,6 +157,7 @@ header {
     font-weight: 600;
     line-height: 15.6px;
     letter-spacing: 0.6px;
+    border-radius: 12px;
     cursor: pointer;
 }
 .filter:hover,
@@ -164,6 +183,8 @@ header {
     height: 342px;
     display: flex;
     flex-direction: column;
+    background-color: #ECF3F8;
+    border-radius: 20px;
     cursor: pointer;
 }
 .gift img {
@@ -177,8 +198,7 @@ header {
     width: 310px;
     height: 112px;
     background-color: #FFFFFF;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 20px;
 }
 .gift_work,
 .gift_health,
@@ -344,4 +364,589 @@ footer {
 .rsschool:hover {
     color: #FF4646;
     transition: 0.8s;
+}
+
+/*-----------MEDIA--------- */
+@media screen and (max-width: 1439px) and (min-width: 769px) {
+    html {
+        width: 100%;
+    }
+    body {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+    .header_container {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .logo_block a{
+        display: flex;
+        align-items: center;
+        width: 8.8125rem;
+        margin: 0.75rem;
+        cursor: pointer;
+    }
+    .logo {
+        margin: 0.5rem 0.5rem 0.5rem 1.25rem;
+    }
+    .logo_text {
+        margin: 0;
+    }
+    .header_navigation {
+        margin-right: 0;
+    }
+    .navigation {
+        width: 23.5rem;
+        height: 2.5rem;
+        margin: 0;
+    }
+    .nav{
+        width: 23.5rem;
+        height: 2.5rem;
+        display: flex;
+        margin: 0;
+        padding-left: 0;
+        padding-top: 0.625rem;
+        gap: 0.5rem;
+        list-style-type: none;
+    }
+    .gifts {
+        width: 100%;
+        height: auto;
+    }
+    .gifts_container {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 3.75rem 0;
+        margin: 0 auto;
+    }
+    .headerone {
+        width: 50vw;
+        height: auto;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    .filters {
+        width: 70vw;
+        height: 2.5rem;
+        margin: 0 auto;
+        padding-top: 1.25rem;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    .gifts_block {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 1.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .footer_container {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 2.875rem;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contacts_block {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 1.875rem;
+        display: flex;
+        gap: 0.75rem;
+    }
+    .contacts a{
+        width: 100%;
+        height: 12.75rem;
+        background-color: #ECF3F8;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .footer_img {
+        padding-top: 1.4rem;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+    .connect {
+        padding-top: 0.75rem;
+        margin: 0 auto;
+    }
+    .calltoaction {
+        padding-top: 0.75rem;
+        margin: 0 auto;
+    }
+    .footer_signature {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 3.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .social {
+        display: flex;
+        padding-top: 0;
+        padding-left: 0;
+        margin: 0 auto;
+        gap: 0.75rem;
+    }
+    .year {
+        margin: 0 auto;
+        padding-top: 0.75rem;
+        padding-left: 0;
+    }
+    .rsschool {
+        margin: 0 auto;
+        padding-top: 0.75rem;
+        padding-left: 0;
+    }
+}
+@media (hover: none) and (pointer: coarse) and (max-width: 1028px) {
+    .nav li a:hover,
+    .filter:hover, 
+    .gift:hover .gift_name,
+    .contacts:hover .connect,
+    .contacts:hover .calltoaction,
+    .social_img:hover,
+    .rsschool:hover {
+        background-color: inherit;
+        color: inherit;
+        text-decoration: none;
+        filter: inherit;
+        transition: inherit;
+    }
+}
+@media (max-width: 1028px) {
+    .filter:hover {
+        color: #FFFFFF;
+        background-color: transparent;
+    }
+}
+@media screen and (max-width: 768px) {
+    html {
+        max-width: 768px;
+        scroll-behavior: smooth;
+        display: block;
+        margin: auto;
+    }
+    body {
+        width: 768px;
+        margin: 0;
+    }
+    main {
+        width: 768px;
+        margin: 0;
+    }
+    header {
+        width: 768px;
+        height: 64px;
+        margin: 0;
+    }
+    .header_container {
+        width: 752px;
+        height: 64px;
+        margin: 0px 8px;
+    }
+    .logo_block a {
+        width: 141px;
+        height: 40px;
+        margin: 12px 571px 12px 0px;
+        cursor: pointer;
+    }
+    .header_navigation {
+        display: none;
+    }
+    .burger_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding-right: 0;
+        margin-right: 0;
+        margin-top: 12px;
+        margin-left: 0;
+        transition: 1s;
+        cursor: pointer;
+    }
+    .burger {
+        display: block;
+    }
+    .gifts {
+        width: 768px;
+        height: 2456px;
+    }
+    .gifts_container {
+        width: 752px;
+        height: 2336px;
+        padding: 60px 8px;
+    }
+    .headerone {
+        width: 426px;
+        height: 144px;
+        margin-left: 163px;
+        margin-right: 163px;
+        padding: 0;
+    }
+    .filters {
+        width: 474px;
+        height: 40px;
+        margin-left: 139px;
+        margin-right: 139px;
+        padding-top: 20px;
+        padding-left: 0;
+    }
+    .gifts_block {
+        width: 692px;
+        height: 2112px;
+        margin: 0;
+        padding-top: 20px;
+        margin-left: 60px;
+    }
+    footer {
+        width: 768px;
+        height: 870px;
+    }
+    .footer_container {
+        width: 752px;
+        height: 808px;
+        padding: 58px 0 0 0;
+        margin-left: 8px;
+    }
+    .contacts_block {
+        width: 752px;
+        height: 636px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .contacts a {
+        width: 752px;
+        height: 204px;
+    }
+    .footer_img {
+        margin-left: 336px;
+        padding-left: 0;
+        padding-bottom: 1px;
+    }
+    .connect {
+        width: 712px;
+        height: 36px;
+        padding-left: 0;
+        padding-top: 14px;
+        margin-left: 24px;
+    }
+    .calltoaction {
+        width: 712px;
+        height: 24px;
+        padding-left: 0;
+        margin-left: 20px;
+    }
+    .footer_signature {
+        width: 752px;
+        height: 112px;
+    }
+    .social {
+        padding-top: 3px;
+        padding-left: 278px;
+    }
+    .year {
+        padding-left: 225.5px;
+    }
+    .rsschool {
+        padding-left: 231px; 
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 381px) {
+    html {
+        width: 100%;
+    }
+    body {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+    .header_container {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .burger_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding-right: 0;
+        margin-right: 0;
+        margin-top: 12px;
+        margin-left: 0;
+        transition: 1s;
+        cursor: pointer;
+    }
+    .burger {
+        display: block;
+    }
+    .logo_block a{
+        display: flex;
+        align-items: center;
+        width: 8.8125rem;
+        margin: 0.75rem;
+        cursor: pointer;
+    }
+    .logo {
+        margin: 0.5rem 0.5rem 0.5rem 1.25rem;
+    }
+    .logo_text {
+        margin: 0;
+    }
+    .gifts {
+        width: 100%;
+        height: auto;
+    }
+    .gifts_container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 3.75rem 0;
+        margin: 0 auto;
+    }
+    .headerone {
+        width: 50vw;
+        height: auto;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    .filters {
+        width: 100%;
+        height: 2.5rem;
+        margin: 0 auto;
+        padding-top: 1.25rem;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        gap: 0;
+    }
+    .filter {
+        padding: 0.75rem 0.5rem 0.75rem 0.5rem;
+    }
+    .gifts_block {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 1.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .footer_container {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .contacts_block {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .contacts a {
+        width: 100%;
+    }
+    .footer_img {
+        margin: 0 auto;
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+    .connect {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 0.875rem;
+        margin: 0 auto;
+    }
+    .calltoaction {
+        width: 100%;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+    .footer_signature {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .social {
+        display: flex;
+        padding-top: 0;
+        padding-left: 0;
+        margin: 0 auto;
+        gap: 0.75rem;
+    }
+    .year {
+        margin: 0 auto;
+        padding-top: 0.75rem;
+        padding-left: 0;
+        text-align: center;
+    }
+    .rsschool {
+        margin: 0 auto;
+        padding-top: 0.75rem;
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 380px) {
+    html {
+        max-width: 380px;
+        scroll-behavior: smooth;
+        display: block;
+        margin: auto;
+    }
+    body {
+        width: 380px;
+        margin: 0;
+    }
+    main {
+        width: 380px;
+        margin: 0;
+    }
+    header {
+        width: 380px;
+        height: 64px;
+    }
+    .header_container {
+        width: 380px;
+        height: 64px;
+        margin: 0;
+    }
+    .logo_block a{
+        margin: 12px 183px 12px 8px;
+    }
+    .gifts {
+        width: 380px;
+        height: 4676px;
+    }
+    .gifts_block {
+        width: 364px;
+    }
+    .gifts_container {
+        width: 364px;
+        height: 4556px;
+        padding: 60px 8px;
+    }
+    .headerone {
+        width: 364px;
+        height: 240px;
+        margin: 0;
+        padding: 0;
+    }
+    .filters {
+        width: 365px;
+        height: 40px;
+        margin: 0;
+        padding-left: 0;
+        gap: 0;
+    }
+    .filter {
+        padding: 12px 8px 12px 8px;
+    }
+    .gifts_block {
+        width: 330px;
+        height: 4236px;
+        margin-left: 27px;
+    }
+    footer {
+        width: 380px;
+        height: 928px;
+    }
+    .footer_container {
+        width: 364px;
+        height: 808px;
+    }
+    .contacts_block {
+        width: 364px;
+        height: 636px;
+    }
+    .contacts a{
+        width: 364px;
+        height: 204px;
+    }
+    .connect {
+        width: 324px;
+        height: 36px;
+        padding-top: 16px;
+    }
+    .calltoaction {
+        width: 324px;
+        height: 24px;
+    }
+    .footer_img {
+        width: 80px;
+        height: 76.84px;
+        margin: 0;
+        padding-top: 21.87px;
+        padding-left: 142px;
+    }
+    .footer_signature {
+        width: 364px;
+        height: 112px;
+        margin: 0;
+    }
+    .social {
+        width: 196px;
+        height: 40px;
+        margin-left: 84px;
+        padding-top: 6px;
+        padding-left: 0;
+    }
+    .year {
+        width: 301px;
+        height: 24px;
+        margin-left: 31.5px;
+        padding-left: 0;
+    }
+    .rsschool {
+        width: 290px;
+        height: 24px;
+        margin-left: 37px;
+        padding-left: 0;
+        letter-spacing: 1.1px;
+    }
 }
