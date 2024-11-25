@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="body-wrapper">
-        <header class="header open">
+        <header class="header">
             <div class="header_container">
                 <div class="logo_block">
                     <a class="link_nav" href="" style="text-decoration: none;color:#181C29">
@@ -26,11 +26,11 @@
                         </div>
                     </a>
                 </div>
-                <div class="burger_menu">
+                <div class="burger_menu" id="burger">
                     <div class="burger"></div>
                     <div class="burger"></div>
                 </div>
-                <div class="header_navigation">
+                <div class="header_navigation" id="navigation">
                     <div class="navigation">
                         <ul class="nav">
                             <li><a class="link_nav" href="gifts/index.html" style="text-decoration: none">GIFTS</a></li>
@@ -71,17 +71,19 @@
                         <div class="slider_textone"><span>Become Happier!</span></div>
                         <h2 class="slider_texttwo">IN THE NEW 2025</h2>
                     </div>
-                    <div class="slider_block">
+                    <div class="slider_block" id="slider">
                         <div class="slider_word"><span>LIVE</span></div>
                         <img class="slider_image" src="img/snowman.png" alt="snowman">
                         <div class="slider_word"><span>CREATE</span></div>
                         <img class="slider_image" src="img/christmastrees.png" alt="christmastree">
                         <div class="slider_word"><span>LOVE</span></div>
                         <img class="slider_image" src="img/christmastreeball.png" alt="christmastreeball">
+                        <div class="slider_word"><span>DREAM</span></div>
+                        <img class="slider_image" src="img/fairytalehouse.png" alt="fairytalehouse">
                     </div>
                     <div class="arrows">
-                        <button disabled><span class="left"></span></button>
-                        <button><span class="right"></span></button>
+                        <button disabled id="left"><span class="left"></span></button>
+                        <button id="right"><span class="right"></span></button>
                     </div>
                 </div>
             </section>
@@ -182,6 +184,7 @@
                 </div>
             </div>
         </footer>
+        <script src="index.js"></script>
     </div>
 </body>
 </html>

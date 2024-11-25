@@ -63,7 +63,7 @@ header {
 .burger {
     width: 21px;
     height: 2px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.5s ease;
     background-color: #181C29;
 }
 .header_navigation {
@@ -301,6 +301,8 @@ header {
     display: flex;
     overflow: visible;
     position: relative;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
 }
 .slider_word {
     padding-top: 51px;
@@ -1159,6 +1161,7 @@ footer {
         justify-content: center;
         align-items: center;
         background-color: #FFFFFF;
+        transition: transform 1s;
     }
     .header.open .header_navigation {
         transform: translateX(0);
@@ -1678,6 +1681,7 @@ footer {
         justify-content: center;
         align-items: center;
         background-color: #FFFFFF;
+        transition: transform 1s;
     }
     .navigation {
         display: flex;
