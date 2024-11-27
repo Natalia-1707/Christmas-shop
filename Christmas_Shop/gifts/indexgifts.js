@@ -151,3 +151,23 @@ harmony.addEventListener("click", () => {
         giftsCatalog.appendChild(giftCard);
     });
 })
+
+// Scroll-to-Top //
+const topBtn = document.getElementById("top");
+function topBtnDisplayed() {
+    const width = window.innerWidth;
+    if (width <= 768 && window.scrollY >= 300) {
+        topBtn.style.display = 'flex';
+    } else {
+        topBtn.style.display = 'none';
+    }
+}
+document.addEventListener("DOMContentLoaded", function() {
+    topBtnDisplayed();
+});
+window.addEventListener("resize", function() {
+    topBtnDisplayed();
+});
+window.addEventListener("scroll", function() {
+    topBtnDisplayed();
+});

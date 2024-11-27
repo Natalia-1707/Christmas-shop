@@ -126,6 +126,7 @@ header {
 }
 .gifts_container {
     width: 1276px;
+    position: relative;
     height: auto;
     margin: 0;
     padding-top: 60px;
@@ -242,6 +243,46 @@ header {
 .gift:hover .gift_name {
     color: #FF4646;
     transition: 0.8s;
+}
+.top_button {
+    width: 56px;
+    height: 56px;
+    position: fixed;
+    right: 8px;
+    bottom: 20px;
+    border-radius: 100px;
+    background-color: #FFFFFF;
+    border: 1px solid #FF4646;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.top {
+    position: relative;
+    width: 10px;
+    height: 10px;
+}
+.top::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 14px;
+    background-color: #FF4646;
+    left: 50%;
+    top: 0;
+    transform: translateX(-64%);
+}
+.top::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #FF4646;
+    border-left: 1px solid #FF4646;
+    transform: rotate(45deg);
+    top: 1px;
+    left: 5%;
 }
 
 /* FOOTER */
@@ -655,11 +696,11 @@ footer {
     }
     .gifts {
         width: 768px;
-        height: 2456px;
+        height: auto;
     }
     .gifts_container {
         width: 752px;
-        height: 2336px;
+        height: auto;
         padding: 60px 8px;
     }
     .headerone {
@@ -679,7 +720,7 @@ footer {
     }
     .gifts_block {
         width: 692px;
-        height: 2112px;
+        height: auto;
         margin: 0;
         padding-top: 20px;
         margin-left: 60px;
@@ -956,14 +997,15 @@ footer {
     }
     .gifts {
         width: 380px;
-        height: 4676px;
+        height: auto;
     }
     .gifts_block {
         width: 364px;
+        height: auto;
     }
     .gifts_container {
         width: 364px;
-        height: 4556px;
+        height: auto;
         padding: 60px 8px;
     }
     .headerone {
@@ -984,7 +1026,7 @@ footer {
     }
     .gifts_block {
         width: 330px;
-        height: 4236px;
+        height: auto;
         margin-left: 27px;
     }
     footer {
