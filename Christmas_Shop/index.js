@@ -85,6 +85,7 @@ function readJson() {
             console.error('Failed to fetch data:', err);
         });
 }
+readJson();
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -118,5 +119,3 @@ function randomGifts() {
         giftsCatalog.appendChild(giftCard);
     });
 }
-
-readJson();
