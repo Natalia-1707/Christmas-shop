@@ -513,7 +513,61 @@ header {
     color: #FF4646;
     transition: 0.8s;
 }
-
+/* Modal window */
+.modal_window {
+    position: fixed;
+    width: 400px;
+    height: 514px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+    transition: opacity .4s, visibility .4s;
+    background-color: #FFFFFF;
+    visibility: hidden;
+}
+.modal_window.open {
+    visibility: visible;
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, .5) 0 0 0 5000px;
+}
+.form_modal {
+    position: absolute;
+    display: block;
+    top: 12px;
+    right: 12px;
+}
+.button_modal {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+.close_modal::before,
+.close_modal::after {
+    position: absolute;
+    background-color:  #181C29;;
+    content: "";
+    width: 2px;
+    height: 25px;
+    top: 18%;
+    left: 48%;
+}
+.close_modal::before {
+    transform: rotate(45deg);
+}
+.close_modal::after {
+    transform: rotate(-45deg);
+}
 /* Section CTA */
 .cta {
     width: 100%;

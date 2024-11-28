@@ -171,3 +171,6 @@ window.addEventListener("resize", function() {
 window.addEventListener("scroll", function() {
     topBtnDisplayed();
 });
+topBtn.addEventListener("click", () => {
+    window.scrollTo(0, 0);
+})

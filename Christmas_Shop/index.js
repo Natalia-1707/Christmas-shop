@@ -110,12 +110,23 @@ function randomGifts() {
             categoryStyle = "gift_harmony";
         }
         giftCard.innerHTML = `
-            <img src="img/${gift.category.toLowerCase()}.png" alt="giftforhealth">
+            <img src="img/${gift.category.toLowerCase()}.png" alt="${gift.category.toLowerCase()}">
             <div class="gift_description">
                 <div class="${categoryStyle}">${gift.category.toUpperCase()}</div>
                 <div class="gift_name">${gift.name.toUpperCase()}</div>
             </div>
         `;
+        giftCard.addEventListener('click', () => openModal(gift));
         giftsCatalog.appendChild(giftCard);
     });
+}
+
+// Modal //
+function openModal(gift) {
+    document.querySelector('.modal_img').src=`${gift.category.toLowerCase()}.png` 
+    document.querySelector('.modal_img').alt=`${gift.category.toLowerCase()}`;
+    document.querySelector('.modal_category').textContent= gift.category.toUpperCase();
+
+    document.getElementById('modal').classList.add('open');
+    document.body.style.overflowY = "hidden";
 }

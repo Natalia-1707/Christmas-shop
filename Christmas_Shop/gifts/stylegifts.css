@@ -54,6 +54,7 @@ header {
     letter-spacing: 0.5px;
 }
 .burger_menu {
+    position: relative;
     display: none;
     width: 40px;
     height: 40px;
@@ -126,7 +127,6 @@ header {
 }
 .gifts_container {
     width: 1276px;
-    position: relative;
     height: auto;
     margin: 0;
     padding-top: 60px;
@@ -639,6 +639,7 @@ footer {
         margin-top: 12px;
         margin-left: 0;
         transition: 1s;
+        z-index: 2;
         cursor: pointer;
     }
     .header.open .burger_menu .burger:nth-child(1) {
@@ -813,6 +814,7 @@ footer {
         margin-top: 12px;
         margin-left: 0;
         transition: 1s;
+        z-index: 2;
         cursor: pointer;
     }
     .burger {
