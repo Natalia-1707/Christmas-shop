@@ -95,24 +95,28 @@ function shuffleArray(array) {
     return array;
 }
 
+function categoryStyle(gift) {
+    if (gift.category === "For Health") {
+        return "gift_health";
+    } else if (gift.category === "For Work") {
+        return "gift_work";
+    } else if (gift.category === "For Harmony") {
+        return "gift_harmony";
+    }
+    return "";
+}
+
 function randomGifts() {
     giftsCatalog.innerHTML = '';
     const shuffledGifts = shuffleArray(giftsData).slice(0, 4);
     shuffledGifts.forEach(gift => {
         const giftCard = document.createElement('div');
         giftCard.classList.add('gifts_example');
-        let categoryStyle = '';
-        if (gift.category === "For Health") {
-            categoryStyle = "gift_health";
-        } else if (gift.category === "For Work") {
-            categoryStyle = "gift_work";
-        } else if (gift.category === "For Harmony") {
-            categoryStyle = "gift_harmony";
-        }
+        let category = categoryStyle(gift);
         giftCard.innerHTML = `
             <img src="img/${gift.category.toLowerCase()}.png" alt="${gift.category.toLowerCase()}">
             <div class="gift_description">
-                <div class="${categoryStyle}">${gift.category.toUpperCase()}</div>
+                <div class="${category}">${gift.category.toUpperCase()}</div>
                 <div class="gift_name">${gift.name.toUpperCase()}</div>
             </div>
         `;
@@ -123,9 +127,44 @@ function randomGifts() {
 
 // Modal //
 function openModal(gift) {
-    document.querySelector('.modal_img').src=`${gift.category.toLowerCase()}.png` 
+    document.querySelector('.modal_img').src=`img/${gift.category.toLowerCase()}.png` 
     document.querySelector('.modal_img').alt=`${gift.category.toLowerCase()}`;
-    document.querySelector('.modal_category').textContent= gift.category.toUpperCase();
+    const modalCategory = document.createElement('div');
+    let category = categoryStyle(gift);
+    modalCategory.innerHTML = `<div class="${category}">${gift.category.toUpperCase()}</div>`;
+    const modalGift = document.querySelector(".modal_gift");
+    modalGift.prepend(modalCategory);
+    document.querySelector('.modal_name').textContent= gift.name.toUpperCase();
+    document.querySelector('.modal_description').textContent= gift.description;
+    const superpowers = document.querySelector('.superpowers');
+    for (const [key, value] of Object.entries(gift.superpowers)) {
+        const superpowerElement = document.createElement('div');
+        const keyContent = document.createElement('div');
+        keyContent.classList.add("keyContent");
+        keyContent.textContent = `${key[0].toUpperCase() + key.slice(1)}`;
+        const valueContent = document.createElement('div');
+        valueContent.textContent = `${value}`
+        //superpowerElement.textContent = `${key[0].toUpperCase()+key.slice(1)}: ${value}`;//
+        superpowerElement.classList.add("superpowerElement");
+        superpowerElement.appendChild(keyContent);
+        superpowerElement.appendChild(valueContent);
+        superpowers.appendChild(superpowerElement);
+
+        const starsNumber = Math.min(Math.floor(value/100), 5);
+        const stars = document.createElement('div');
+        for (let i = 0; i < 5; i++) {
+            const star = document.createElement('div');
+            if (i < starsNumber) {
+                star.innerHTML  = `<img src="img/snowflake.svg" alt="snowflakecolored">`;
+            } else {
+                star.innerHTML = `<img src="img/snowflake2.svg" alt="snowflaketransparent">`;
+            }
+            stars.appendChild(star);
+            stars.classList.add("stars");
+        }
+        superpowerElement.appendChild(stars);
+        superpowers.appendChild(superpowerElement);
+    }
 
     document.getElementById('modal').classList.add('open');
     document.body.style.overflowY = "hidden";

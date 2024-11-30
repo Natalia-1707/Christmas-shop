@@ -499,7 +499,8 @@ header {
 .gift_harmony {
     color: #FF43F7;
 }
-.gift_name {
+.gift_name,
+.modal_name {
     display: flex;
     padding-top: 9px;
     padding-left: 20px;
@@ -516,10 +517,10 @@ header {
 /* Modal window */
 .modal_window {
     position: fixed;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     height: 514px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     z-index: 2;
     top: 50%;
@@ -529,6 +530,7 @@ header {
     transition: opacity .4s, visibility .4s;
     background-color: #FFFFFF;
     visibility: hidden;
+    border-radius: 20px;
 }
 .modal_window.open {
     visibility: visible;
@@ -540,6 +542,7 @@ header {
     display: block;
     top: 12px;
     right: 12px;
+    z-index: 2;
 }
 .button_modal {
     position: relative;
@@ -567,6 +570,89 @@ header {
 }
 .close_modal::after {
     transform: rotate(-45deg);
+}
+.modal_box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.modal_img {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    background-color: #ECF3F8;
+    z-index: 1;
+}
+.modal_text {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0; 
+}
+.modal_gift {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 8px;
+    max-width: 360px;
+    width: 100%;
+    height: 104px;
+    margin: 20px 20px;
+}
+#modal .gift_work,
+#modal .gift_health,
+#modal .gift_harmony {
+    padding: 0;
+}
+#modal .modal_name {
+    padding: 0;
+}
+.modal_description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.68px;
+}
+.modal_superpowers {
+    max-width: 360px;
+    width: 100%;
+    height: auto;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.superpowers {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.68px;
+}
+.keyContent {
+    width: 184px;
+}
+.superpowerElement {
+    display: flex;
+    justify-content: space-between;
+}
+.stars {
+    display: flex;
+    gap: 8px;
+}
+.adds {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15.6px;
+    letter-spacing: 0.5px;
 }
 /* Section CTA */
 .cta {
@@ -1730,6 +1816,24 @@ footer {
         margin: 0 auto;
         padding-top: 0.75rem;
         padding-left: 0;
+    }
+}
+@media screen and (max-width: 410px) {
+    .modal_window {
+        width: 364px;
+        height: auto;
+    }
+    .modal_gift {
+        width: 324px;
+        height: auto;
+    }
+    .modal_superpowers {
+        width: 324px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .keyContent {
+        width: 148px;
     }
 }
 @media screen and (max-width: 380px) {
