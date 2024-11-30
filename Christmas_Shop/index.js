@@ -13,18 +13,20 @@ document.addEventListener("DOMContentLoaded", function() {
 // slider //
 const leftBtn = document.getElementById("left");
 const rightBtn = document.getElementById("right");
-const slider = document.getElementById("slider");
-const sliderArray = Array.from(slider.children);
-let currentIndex = 0
-console.log(sliderArray);
+const slider = document.getElementById("slider_wrapper")
+const sliderElements = document.getElementById("slider");
+const sliderArray = Array.from(sliderElements.children);
+let totalWidth = 1993;
 leftBtn.classList.add("disabled");
 rightBtn.addEventListener("click", () => {
-    const width = window.innerWidth;
+    const width = slider.offsetWidth;
     let visibleArea = width;
+    let sum = 0
     if (width > 768) {
         slider.scrollLeft += (1993 - visibleArea) / 3;
-        console.log((1993 - visibleArea) / 3)
         leftBtn.classList.remove("disabled");
+        sum += slider.scrollLeft
+        console.log(width)
     }
     if (width <= 768) {
         slider.scrollLeft += (1993 - visibleArea) / 6;
@@ -32,13 +34,14 @@ rightBtn.addEventListener("click", () => {
     }
 })
 leftBtn.addEventListener("click", () => {
-    const width = window.innerWidth;
+    const width = slider.offsetWidth;
+    let visibleArea = width;
     if (width > 768) {
-        slider.scrollLeft -= 239;
+        slider.scrollLeft -= (1993 - visibleArea) / 3;
+        console.log(slider.scrollLeft * 3)
     }
     if (width <= 768) {
-        slider.scrollLeft -= 119;
-        leftBtn.classList.remove("disabled");
+        slider.scrollLeft -= (1993 - visibleArea) / 6;
     }
 })
 
