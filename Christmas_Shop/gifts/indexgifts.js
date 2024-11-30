@@ -49,27 +49,32 @@ function shuffleArray(array) {
     return array;
 }
 
+function categoryStyle(gift) {
+    if (gift.category === "For Health") {
+        return "gift_health";
+    } else if (gift.category === "For Work") {
+        return "gift_work";
+    } else if (gift.category === "For Harmony") {
+        return "gift_harmony";
+    }
+    return "";
+}
+
 function randomGifts() {
     giftsCatalog.innerHTML = '';
     let shuffledGifts = shuffleArray(giftsData);
     shuffledGifts.forEach(gift => {
         const giftCard = document.createElement('div');
         giftCard.classList.add('gift');
-        let categoryStyle = '';
-        if (gift.category === "For Health") {
-            categoryStyle = "gift_health";
-        } else if (gift.category === "For Work") {
-            categoryStyle = "gift_work";
-        } else if (gift.category === "For Harmony") {
-            categoryStyle = "gift_harmony";
-        }
+        let category = categoryStyle(gift);
         giftCard.innerHTML = `
             <img src="img/${gift.category.toLowerCase()}.png" alt="${gift.category.toLowerCase()}">
             <div class="gift_description">
-                <div class="${categoryStyle}">${gift.category.toUpperCase()}</div>
+                <div class="${category}">${gift.category.toUpperCase()}</div>
                 <div class="gift_name">${gift.name.toUpperCase()}</div>
             </div>
         `;
+        giftCard.addEventListener('click', () => openModal(gift));
         giftsCatalog.appendChild(giftCard);
     });
 }
@@ -104,6 +109,7 @@ work.addEventListener("click", () => {
                 <div class="gift_name">${gift.name.toUpperCase()}</div>
             </div>
         `;
+        giftCard.addEventListener('click', () => openModal(gift));
         giftsCatalog.appendChild(giftCard);
     });
 })
@@ -126,6 +132,7 @@ health.addEventListener("click", () => {
                 <div class="gift_name">${gift.name.toUpperCase()}</div>
             </div>
         `;
+        giftCard.addEventListener('click', () => openModal(gift));
         giftsCatalog.appendChild(giftCard);
     });
 })
@@ -148,6 +155,7 @@ harmony.addEventListener("click", () => {
                 <div class="gift_name">${gift.name.toUpperCase()}</div>
             </div>
         `;
+        giftCard.addEventListener('click', () => openModal(gift));
         giftsCatalog.appendChild(giftCard);
     });
 })
@@ -174,3 +182,69 @@ window.addEventListener("scroll", function() {
 topBtn.addEventListener("click", () => {
     window.scrollTo(0, 0);
 })
+
+// Modal //
+const modalWindow = document.getElementById('modal')
+function openModal(gift) {
+    const modalGift = document.querySelector(".modal_gift");
+    modalGift.innerHTML = '';
+    const superpowers = document.querySelector('.superpowers');
+    superpowers.innerHTML = '';
+    document.querySelector('.modal_img').src=`img/${gift.category.toLowerCase()}.png` 
+    document.querySelector('.modal_img').alt=`${gift.category.toLowerCase()}`;
+    const modalCategory = document.createElement('div');
+    let category = categoryStyle(gift);
+    modalCategory.innerHTML = `<div class="${category}">${gift.category.toUpperCase()}</div>`;
+    modalGift.prepend(modalCategory);
+    const modalName = document.createElement('div');
+    modalName.innerHTML= gift.name.toUpperCase();
+    modalName.classList.add("modal_name");
+    modalGift.appendChild(modalName);
+    const modalDescription = document.createElement('div');
+    modalDescription.innerHTML= gift.description;
+    modalDescription.classList.add("modal_description");
+    modalGift.appendChild(modalDescription);
+    for (const [key, value] of Object.entries(gift.superpowers)) {
+        const superpowerElement = document.createElement('div');
+        const keyContent = document.createElement('div');
+        keyContent.classList.add("keyContent");
+        keyContent.textContent = `${key[0].toUpperCase() + key.slice(1)}`;
+        const valueContent = document.createElement('div');
+        valueContent.textContent = `${value}`
+        superpowerElement.classList.add("superpowerElement");
+        superpowerElement.appendChild(keyContent);
+        superpowerElement.appendChild(valueContent);
+        superpowers.appendChild(superpowerElement);
+
+        const starsNumber = Math.min(Math.floor(value/100), 5);
+        const stars = document.createElement('div');
+        for (let i = 0; i < 5; i++) {
+            const star = document.createElement('div');
+            if (i < starsNumber) {
+                star.innerHTML  = `<img src="img/snowflake.svg" width="16" height="16" alt="snowflakecolored">`;
+            } else {
+                star.innerHTML = `<img src="img/snowflake2.svg" width="16" height="16" alt="snowflaketransparent">`;
+            }
+            stars.appendChild(star);
+            stars.classList.add("stars");
+        }
+        superpowerElement.appendChild(stars);
+        superpowers.appendChild(superpowerElement);
+    }
+
+    modalWindow.classList.add('open');
+    document.body.style.overflow = "hidden";
+}
+
+const modalBtn = document.getElementById("button_modal");
+modalBtn.addEventListener("click", () => {
+    modalWindow.classList.remove('open');
+    document.body.style.overflow = "";
+})
+
+document.getElementById('modal').addEventListener('click', (event) => {
+    if (event.target === event.currentTarget) {
+        event.currentTarget.classList.remove('open');
+        document.body.style.overflowY = "";
+    }
+});

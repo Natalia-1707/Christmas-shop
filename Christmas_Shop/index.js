@@ -126,17 +126,26 @@ function randomGifts() {
 }
 
 // Modal //
+const modalWindow = document.getElementById('modal')
 function openModal(gift) {
+    const modalGift = document.querySelector(".modal_gift");
+    modalGift.innerHTML = '';
+    const superpowers = document.querySelector('.superpowers');
+    superpowers.innerHTML = '';
     document.querySelector('.modal_img').src=`img/${gift.category.toLowerCase()}.png` 
     document.querySelector('.modal_img').alt=`${gift.category.toLowerCase()}`;
     const modalCategory = document.createElement('div');
     let category = categoryStyle(gift);
     modalCategory.innerHTML = `<div class="${category}">${gift.category.toUpperCase()}</div>`;
-    const modalGift = document.querySelector(".modal_gift");
     modalGift.prepend(modalCategory);
-    document.querySelector('.modal_name').textContent= gift.name.toUpperCase();
-    document.querySelector('.modal_description').textContent= gift.description;
-    const superpowers = document.querySelector('.superpowers');
+    const modalName = document.createElement('div');
+    modalName.innerHTML= gift.name.toUpperCase();
+    modalName.classList.add("modal_name");
+    modalGift.appendChild(modalName);
+    const modalDescription = document.createElement('div');
+    modalDescription.innerHTML= gift.description;
+    modalDescription.classList.add("modal_description");
+    modalGift.appendChild(modalDescription);
     for (const [key, value] of Object.entries(gift.superpowers)) {
         const superpowerElement = document.createElement('div');
         const keyContent = document.createElement('div');
@@ -144,7 +153,6 @@ function openModal(gift) {
         keyContent.textContent = `${key[0].toUpperCase() + key.slice(1)}`;
         const valueContent = document.createElement('div');
         valueContent.textContent = `${value}`
-        //superpowerElement.textContent = `${key[0].toUpperCase()+key.slice(1)}: ${value}`;//
         superpowerElement.classList.add("superpowerElement");
         superpowerElement.appendChild(keyContent);
         superpowerElement.appendChild(valueContent);
@@ -166,6 +174,23 @@ function openModal(gift) {
         superpowers.appendChild(superpowerElement);
     }
 
-    document.getElementById('modal').classList.add('open');
-    document.body.style.overflowY = "hidden";
+    modalWindow.classList.add('open');
+    document.body.style.overflow = "hidden";
 }
+
+const modalBtn = document.getElementById("button_modal");
+modalBtn.addEventListener("click", () => {
+    modalWindow.classList.remove('open');
+    document.body.style.overflow = "";
+})
+
+document.querySelector("#modal .modal_box").addEventListener("click", event =>{
+    event._isClickWithInModal = true;
+})
+
+document.getElementById('modal').addEventListener('click', (event) => {
+    if (event.target === event.currentTarget) {
+        event.currentTarget.classList.remove('open');
+        document.body.style.overflowY = "";
+    }
+});
