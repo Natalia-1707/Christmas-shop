@@ -18,19 +18,29 @@ const sliderElements = document.getElementById("slider");
 const sliderArray = Array.from(sliderElements.children);
 let totalWidth = 1993;
 leftBtn.classList.add("disabled");
+const updateMaxScroll = () => slider.scrollWidth - slider.offsetWidth;
 rightBtn.addEventListener("click", () => {
     const width = slider.offsetWidth;
     let visibleArea = width;
-    let sum = 0
     if (width > 768) {
         slider.scrollLeft += (1993 - visibleArea) / 3;
         leftBtn.classList.remove("disabled");
-        sum += slider.scrollLeft
-        console.log(width)
+        const maxScrollLeft = updateMaxScroll();
+        if (maxScrollLeft - slider.scrollLeft <= slider.scrollLeft) {
+            rightBtn.classList.add("disabled");
+        } else {
+            rightBtn.classList.remove("disabled");
+        }
     }
     if (width <= 768) {
-        slider.scrollLeft += (1993 - visibleArea) / 6;
         leftBtn.classList.remove("disabled");
+        slider.scrollLeft += (1993 - visibleArea) / 6;
+        const maxScrollLeft = updateMaxScroll();
+        if (maxScrollLeft - ((1993 - visibleArea) / 6) <= slider.scrollLeft) {
+            rightBtn.classList.add("disabled");
+        } else {
+            rightBtn.classList.remove("disabled");
+        }
     }
 })
 leftBtn.addEventListener("click", () => {
@@ -38,10 +48,24 @@ leftBtn.addEventListener("click", () => {
     let visibleArea = width;
     if (width > 768) {
         slider.scrollLeft -= (1993 - visibleArea) / 3;
-        console.log(slider.scrollLeft * 3)
+        rightBtn.classList.remove("disabled");
+        const maxScrollLeft = updateMaxScroll();
+        if (maxScrollLeft - slider.scrollLeft <= slider.scrollLeft) {
+            leftBtn.classList.remove("disabled");
+        } else {
+            leftBtn.classList.add("disabled");
+        }
     }
     if (width <= 768) {
         slider.scrollLeft -= (1993 - visibleArea) / 6;
+        rightBtn.classList.remove("disabled");
+        console.log (slider.scrollLeft)
+        const maxScrollLeft = updateMaxScroll();
+        if (300 <= slider.scrollLeft) {
+            leftBtn.classList.remove("disabled");
+        } else {
+            leftBtn.classList.add("disabled");
+        }
     }
 })
 
