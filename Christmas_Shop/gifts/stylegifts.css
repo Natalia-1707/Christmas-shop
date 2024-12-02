@@ -635,8 +635,6 @@ footer {
         margin: 0 auto;
     }
     .headerone {
-        width: 50vw;
-        height: auto;
         margin: 0 auto;
         padding-left: 0;
     }
@@ -997,10 +995,9 @@ footer {
         margin: 0 auto;
     }
     .headerone {
-        width: 50vw;
-        height: auto;
+        width: 364px;
+        height: 240px;
         margin: 0 auto;
-        padding-left: 0;
     }
     .filters {
         width: 100%;
