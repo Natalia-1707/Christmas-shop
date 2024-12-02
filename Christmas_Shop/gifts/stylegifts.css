@@ -689,6 +689,12 @@ footer {
         flex-direction: column;
         cursor: pointer;
     }
+    footer {
+        height: auto;
+    }
+    .footer_container {
+        height: auto;
+    }
     .footer_img {
         padding-top: 1.4rem;
         padding-left: 0;
