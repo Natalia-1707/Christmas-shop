@@ -1,11 +1,13 @@
 // burger //
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("burger").addEventListener("click", function() {
-        document.querySelector(".header").classList.toggle("open")
+        document.querySelector(".header").classList.toggle("open");
+        document.body.classList.toggle("no_scroll");
     })
     document.querySelectorAll(".link_nav").forEach(function(link) {
         link.addEventListener("click", function() {
              document.querySelector(".header").classList.remove("open");
+             document.body.classList.remove("no_scroll");
         });
     })
     document.querySelector(".non_interactive").addEventListener("click", function(event) {
