@@ -66,6 +66,10 @@ header {
     transition: transform 0.5s ease;
     background-color: #181C29;
 }
+.no_scroll {
+    overflow: hidden;
+    height: 100vh;
+}
 .header_navigation {
     width: 376px;
     height: 40px;
