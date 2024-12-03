@@ -68,6 +68,11 @@ leftBtn.addEventListener("click", () => {
         }
     }
 })
+window.addEventListener("resize", () => {
+    slider.scrollLeft = 0;
+    leftBtn.classList.add("disabled");
+    rightBtn.classList.remove("disabled");
+});
 
 // Timer//
 const days = document.getElementById("days");
