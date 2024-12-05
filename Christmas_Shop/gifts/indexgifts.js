@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector(".non_interactive").addEventListener("click", function(event) {
         event.preventDefault();
         document.querySelector(".header").classList.remove("open");
+        document.body.classList.remove("no_scroll");
     })
 })
 
